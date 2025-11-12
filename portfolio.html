@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="es" style="overflow-x: hidden">
+<!-- style="overflow-x: hidden;": Este es un estilo CSS en línea que se aplica directamente a la etiqueta <html>. Su propósito es ocultar la barra de desplazamiento horizontal (overflow-x) en la página. -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSL</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="img/icono-sin-fondo.ico" />
+</head>
+
+<body>
+  <nav>
+    <div>
+      <a href="index.html"><img class="logo" src="img/logowhite.png" alt="icono" /></a>
+    </div>
+    <div class="nav-logo">DSL</div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="educacion.html">Educación</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h1>Portafolio Creativo</h1>
+      <p class="presentacion">
+        ¡Bienvenido a mi espacio creativo! En esta sección, comparto una
+        colección de mis diseños web, invitaciones, currículums y más. Navega
+        por mis proyectos y descubre cómo puedo ayudarte a dar vida a tus
+        ideas con un diseño funcional y atractivo.
+      </p>
+      <div class="container">
+        <div class="products-container">
+
+          <div class="product" data-name="p-1">
+            <img src="img/proyectos/pachamama/4.png" alt="Diseño Web" />
+            <h3>Diseño Web</h3>
+            <button>Ver más</button>
+          </div>
+
+          <div class="product" data-name="p-2">
+            <img src="img/cv/cv1.png" alt=" Currículums" />
+            <h3>Currículums y Portafolios</h3>
+            <button>Ver más</button>
+          </div>
+
+          <div class="product" data-name="p-3">
+            <img src="img/volantes/panaderia.png" alt="Volantes" />
+            <h3>Diseño de Material Impreso</h3>
+            <button>Ver más</button>
+          </div>
+
+          <div class="product" data-name="p-4">
+            <img src="img/album y presenta/presentacion.jpg" alt="Presentaciones" />
+            <h3>Presentaciones y Álbumes</h3>
+            <button>Ver más</button>
+          </div>
+
+          <div class="product" data-name="p-5">
+            <img src="img/invitaciones/mayores 4.png" alt="Invitaciones" />
+            <h3>Invitaciones Digitales</h3>
+            <button>Ver más</button>
+          </div>
+
+          <div class="product" data-name="p-6">
+            <img src="img/menues/menu1.png" alt="Menús" />
+            <h3>Diseño de Menús</h3>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-preview">
+        <div class="preview" data-target="p-1">
+          <i class="fas fa-times"></i>
+
+          <h3>Diseño Web</h3>
+
+          <p>
+            ¿Tu negocio necesita una presencia digital que cautive? Aquí te
+            muestro ejemplos de cómo creo sitios web que no solo lucen
+            increíbles, sino que también son fáciles de usar en cualquier
+            dispositivo. Descubre la clave para una experiencia de usuario
+            inolvidable.
+          </p>
+
+          <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 6">
+            <div class="list">
+              <a href="#pachamama">
+                <div class="item" style="--position: 1">
+                  <h4>Pachamama</h4>
+                  <img src="img/proyectos/pachamama/4.png" alt="Pachamama" />
+                </div>
+              </a>
+
+              <a href="#mio">
+                <div class="item" style="--position: 2">
+                  <h4>Mio Sole</h4>
+                  <img src="img/proyectos/miosole/Mío3.jpg" alt="Mio Sole" />
+                </div>
+              </a>
+
+              <a href="#percibido">
+                <div class="item" style="--position: 3">
+                  <h4>Diseño Percibido</h4>
+                  <img src="img/proyectos/percibido/1.png" alt="Percibido" />
+                </div>
+              </a>
+
+              <a href="#infinita">
+                <div class="item" style="--position: 4">
+                  <h4>Piedra Infinita</h4>
+                  <img src="img/proyectos/piedra-infinita/familia6.jpg" alt="Infinita" />
+                </div>
+              </a>
+
+              <a href="#galaxia">
+                <div class="item" style="--position: 5">
+                  <h4>Galaxia</h4>
+                  <img src="img/proyectos/galaxia/galaxia.jpg" alt="Galaxia" />
+                </div>
+              </a>
+
+              <a href="#bttf">
+                <div class="item" style="--position: 6">
+                  <h4>BTTF</h4>
+                  <img src="img/proyectos/bttf/bttf.png" alt="BTTF" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <section id="pachamama">
+            <h2>Pachamama</h2>
+            <div class="galery">
+              <a href="img/proyectos/pachamama/1.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/pachamama/1.png" alt="Pachamama1" /></a>
+              <a href="img/proyectos/pachamama/2.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/pachamama/2.png" alt="Pachamama2" /></a>
+              <a href="img/proyectos/pachamama/3.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/pachamama/3.png" alt="Pachamama3" /></a>
+              <a href="img/proyectos/pachamama/4.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/pachamama/4.png" alt="Pachamama4" /></a>
+              <a href="img/responsiv/pachamama.png" target="_blank"><img class="foto-1"
+                  src="img/responsiv/pachamama.png" alt="Pachamama"></a>
+            </div>
+
+            <p>
+              Este proyecto consiste en la creación de la maqueta (o prototipo de interfaz de usuario) para una
+              plataforma de e-commerce dedicada a un vivero. El objetivo principal es visualizar y estructurar la
+              experiencia de compra en línea para los usuarios, presentando de manera atractiva y funcional la variedad
+              de plantas, flores y productos de jardinería.
+            </p>
+
+            <h4>🌱 Tecnologías de Desarrollo Web</h4>
+            <p>
+              El desarrollo técnico de esta maqueta se ha realizado utilizando una combinación de tecnologías
+              fundamentales en el diseño y desarrollo web moderno:
+            </p>
+
+            <ul class="card-list">
+              <li>
+                <strong>HTML (HyperText Markup Language):</strong> Utilizado para estructurar el contenido y la
+                semántica
+                de cada página, definiendo elementos como encabezados, párrafos, listas, imágenes y formularios de
+                compra.
+              </li>
+              <li>
+                <strong>CSS (Cascading Style Sheets):</strong> Empleado para dar estilo visual a la interfaz,
+                controlando
+                la tipografía, los colores, el espaciado, los fondos, la disposición de los elementos (layouts) y la
+                responsividad para asegurar una visualización óptima en diferentes dispositivos.
+              </li>
+              <li>
+                <strong>JavaScript:</strong> Integrado para añadir interactividad dinámica, como carruseles de
+                productos,
+                validación de formularios, filtros de búsqueda, animaciones y cualquier funcionalidad que mejore la
+                experiencia del usuario sin recargar la página.
+              </li>
+              <li>
+                <strong>React:</strong> Se ha utilizado esta biblioteca de JavaScript para construir una interfaz de
+                usuario modular y eficiente. React permite crear componentes reutilizables, lo que facilita el
+                desarrollo,
+                la gestión del estado de la aplicación y la escalabilidad del proyecto, garantizando una experiencia de
+                usuario fluida y reactiva.
+              </li>
+              <li>
+                <strong>Diseño Gráfico (Canva):</strong> Adicionalmente, el diseño gráfico y visual de la maqueta ha
+                sido
+                concebido y trabajado con Canva. Esta herramienta de diseño se ha empleado para crear elementos
+                gráficos,
+                iconos, banners promocionales y la paleta de colores general, asegurando una estética coherente y
+                atractiva
+                que refleje la frescura y naturaleza de un vivero, antes de ser implementados y adaptados en el código.
+              </li>
+            </ul>
+
+            <p>
+              En resumen, esta maqueta representa un esfuerzo integral de diseño y desarrollo web para sentar las bases
+              de una tienda en línea intuitiva, visualmente agradable y técnicamente robusta para un vivero.
+            </p>
+          </section>
+
+          <section id="mio">
+            <h2>Mio Sole</h2>
+            <div class="galery">
+              <a href="img/proyectos/miosole/1.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/miosole/1.png" alt="Mio sole 1" /></a>
+              <a href="img/proyectos/miosole/2.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/miosole/2.png" alt="Mio sole 2" /></a>
+              <a href="img/proyectos/miosole/3.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/miosole/3.png" alt="Mio sole 3" /></a>
+              <a href="img/proyectos/miosole/4.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/miosole/4.png" alt="Mio sole 4" /></a>
+              <a href="img/responsiv/mio.png" target="_blank"><img class="foto-1" src="img/responsiv/mio.png"
+                  alt="Mio sole 5" /></a>
+            </div>
+
+            <h4>🌶️ Descripción Detallada del Proyecto de E-commerce de Especias</h4>
+            <p>Este proyecto abarca la creación de la maqueta funcional y la arquitectura inicial de un e-commerce
+              especializado en la venta de especias. El objetivo es establecer una plataforma digital completa que no
+              solo muestre los productos (el frontend), sino que también gestione la lógica de negocio, los datos y el
+              funcionamiento del servidor (el backend).
+
+              La implementación se basa en una estructura Full-Stack, utilizando un conjunto de tecnologías clave para
+              asegurar un desarrollo moderno, interactivo y escalable.
+            </p>
+
+            <h4>🖥️ Tecnologías de Desarrollo (Frontend y Backend)</h4>
+            <p>
+              El proyecto se sustenta en las siguientes tecnologías esenciales:
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>HTML (HyperText Markup Language):</strong> Este lenguaje es el esqueleto de la aplicación. Se
+                utiliza para estructurar y organizar todo el contenido de las páginas del e-commerce (listados de
+                especias,
+                descripciones de productos, carrito de compras, formularios de pedido, etc.), asegurando una correcta
+                semántica para la accesibilidad y los motores de búsqueda.
+              </li>
+              <li>
+                <strong>CSS (Cascading Style Sheets):</strong> Responsable de toda la apariencia visual y el diseño de
+                la
+                tienda. Se utiliza para estilizar la interfaz con colores cálidos y terrosos que evocan el tema de las
+                especias,
+                definir tipografías legibles y, crucialmente, implementar el diseño responsive. Esto garantiza que la
+                plataforma se vea y funcione perfectamente en cualquier dispositivo (computadora, tablet o celular).
+              </li>
+              <li>
+                <strong>JavaScript:</strong> Es el lenguaje que inyecta interactividad y dinamismo en el frontend. Se
+                emplea para manejar las interacciones del usuario, como añadir productos al carrito sin recargar la
+                página,
+                aplicar filtros de búsqueda por tipo de especia, mostrar ventanas modales de confirmación o realizar
+                animaciones sutiles para mejorar la experiencia de navegación.
+              </li>
+              <li>
+                <strong>Node.js:</strong> Esta es la plataforma de JavaScript del lado del servidor (el backend).
+                Node.js
+                se utiliza para construir la lógica de negocio robusta que un e-commerce requiere.
+                Sus responsabilidades incluyen:
+                <ul class="card-list">
+                  <li>Gestionar el servidor web y las peticiones de los clientes.</li>
+                  <li>Conectarse y gestionar la base de datos de especias, inventario y usuarios.</li>
+                  <li>Implementar las APIs (puntos de acceso) para que el frontend pueda obtener la lista de productos,
+                    procesar los pedidos, gestionar la autenticación de usuarios y las pasarelas de pago.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h4>🎯 Alcance de la Maqueta</h4>
+            <p> Esta "maqueta" va más allá de un simple diseño visual, ya que incluye la arquitectura del servidor. En
+              el frontend, se han definido y estilizado las pantallas clave: la página de inicio con productos
+              destacados,
+              la página de listado y detalle de cada especia, y el flujo completo del carrito de compras y checkout. En
+              el backend, la integración con Node.js proporciona la capacidad de hacer esta maqueta completamente
+              funcional al conectar la interfaz de usuario con la gestión de datos real del negocio de especias.
+            </p>
+          </section>
+
+          <section id="percibido">
+            <h2>Diseño Percibido</h2>
+            <div class="galery">
+              <a href="img/proyectos/percibido/1.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/percibido/1.png" alt="Percibido 1" /></a>
+              <a href="img/proyectos/percibido/2.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/percibido/2.png" alt="Percibido 2" /></a>
+              <a href="img/proyectos/percibido/3.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/percibido/3.png" alt="Percibido 3" /></a>
+              <a href="img/proyectos/percibido/4.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/percibido/4.png" alt="Percibido 4" /></a>
+              <a href="img/responsiv/percibido.png" target="_blank"><img class="foto-1"
+                  src="img/responsiv/percibido.png" alt="Percibido 5" /></a>
+            </div>
+
+            <h4>🏗️ Descripción Detallada del Prototipo Web para Maestra Mayor de Obras</h4>
+            <p>El proyecto consiste en el desarrollo del prototipo o maqueta de una página web profesional diseñada
+              específicamente para una maestra mayor de obras (o arquitecta técnica). El objetivo es crear una presencia
+              digital sólida que sirva como portafolio, muestre la gama de servicios ofrecidos (dirección de obra,
+              reformas, tasaciones, etc.), y facilite el contacto con potenciales clientes, garantizando una
+              visualización impecable en cualquier dispositivo.</p>
+
+            <h4>🧱 Tecnologías de Desarrollo Utilizadas</h4>
+            <br>
+            <p>
+              La implementación de este prototipo se ha llevado a cabo utilizando un conjunto de tecnologías estándar y
+              un marco de trabajo que aseguran eficiencia y un diseño adaptable:
+            </p>
+
+            <ul class="card-list">
+              <li>
+                <strong>HTML (HyperText Markup Language):</strong> Este lenguaje constituye la estructura fundamental y
+                la
+                semántica de la web. Se utiliza para organizar el contenido clave, como la presentación de la
+                profesional,
+                el listado de proyectos realizados (portafolio), la descripción detallada de sus servicios y el
+                formulario
+                de contacto.
+              </li>
+              <li>
+                <strong>CSS (Cascading Style Sheets):</strong> El CSS puro se aplica para establecer la identidad visual
+                del sitio. Esto incluye definir una paleta de colores profesional (que podría evocar la solidez y la
+                construcción), seleccionar tipografías que sean claras y legibles, y ajustar detalles de espaciado y
+                alineación que refuercen la seriedad y el rigor de la profesión.
+              </li>
+            </ul>
+
+            <h4>📐 El Rol Estratégico de Bootstrap</h4>
+            <p>El uso de Bootstrap es la pieza central que acelera el desarrollo y garantiza la modernidad del sitio
+              web:</p>
+
+            <ul class="card-list">
+              <li>
+                <strong>Bootstrap (Framework CSS/JavaScript):</strong> Se integra como un framework de desarrollo
+                frontend
+                que provee una colección de componentes prediseñados y un sistema de cuadrícula (Grid System) altamente
+                eficiente.
+              </li>
+              <li>
+                <strong>Diseño Responsive por Defecto:</strong> La característica más crítica es que Bootstrap hace que
+                el
+                diseño sea completamente responsive de manera automática. Esto significa que la web se adapta
+                perfectamente al tamaño de la pantalla, ya sea en una computadora de escritorio, una tablet o un
+                celular,
+                algo esencial para que los clientes puedan revisar el portafolio en cualquier momento y lugar.
+              </li>
+              <li>
+                <strong>Componentes Profesionales:</strong> Facilita la implementación rápida de elementos comunes en
+                sitios profesionales, como menús de navegación fijos, carruseles de imágenes para mostrar proyectos,
+                tarjetas o cards para describir servicios, y botones estandarizados, lo que resulta en una interfaz
+                pulida
+                y coherente con menos esfuerzo.
+              </li>
+            </ul>
+
+            <h4>🎯 Beneficios del Prototipo</h4>
+
+            <p>En conjunto, la combinación de estas herramientas da como resultado una maqueta web que es:</p>
+
+            <ul class="card-list">
+              <li>
+                <strong>Profesional y Estética:</strong> Con un diseño limpio y moderno adecuado para el sector de la
+                construcción.
+              </li>
+              <li>
+                <strong>Móvil Primero:</strong> Completamente optimizada para dispositivos móviles gracias a Bootstrap,
+                lo
+                que mejora la experiencia del usuario y el posicionamiento SEO.
+              </li>
+              <li>
+                <strong>Base Robusta:</strong> Lista para ser utilizada como la base de un sitio web funcional.
+              </li>
+            </ul>
+          </section>
+
+          <section id="infinita">
+            <h2>Piedra Infinita</h2>
+            <div class="galery">
+              <a href="img/proyectos/piedra-infinita/familia.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/piedra-infinita/familia.png" alt="Vinoteca 1" /></a>
+              <a href="img/proyectos/piedra-infinita/inicio.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/piedra-infinita/inicio.png" alt="Vinoteca 2" /></a>
+              <a href="img/proyectos/piedra-infinita/vinos.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/piedra-infinita/vinos.png" alt="Vinoteca 3" /></a>
+              <a href="img/proyectos/piedra-infinita/finca.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/piedra-infinita/finca.png" alt="Vinoteca 4" /></a>
+              <a href="img/proyectos/piedra-infinita/ubicacion.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/piedra-infinita/ubicacion.png" alt="Vinoteca 5" /></a>
+              <a href="img/proyectos/piedra-infinita/4.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/piedra-infinita/4.png" alt="Vinoteca 6" /></a>
+              <a href="img/responsiv/infinita.png" target="_blank"><img class="foto-1" src="img/responsiv/infinita.png"
+                  alt="Vinoteca 7" /></a>
+            </div>
+
+            <h4>🍷 Descripción Detallada: Maqueta de la Aplicación Web "Piedra Infinita"</h4>
+            <br>
+            <p>
+              La maqueta de la aplicación web "Piedra Infinita" está diseñada para ser el hogar virtual y la principal
+              plataforma digital de la bodega homónima. Su propósito fundamental es doble: promover y facilitar la
+              adquisición de sus productos de alta calidad, y al mismo tiempo, resaltar el profundo compromiso de la
+              bodega con el entorno natural, la filosofía de producción sostenible y la identidad de sus terroirs.
+
+              La interfaz busca transmitir una sensación de elegancia, calidad y respeto por la naturaleza, elementos
+              clave de la marca.
+            </p>
+
+            <h4>🎯 Objetivo y Propósito de la Aplicación</h4>
+            <br>
+            <p>
+              La plataforma sirve como un escaparate digital donde los usuarios pueden:
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>Explorar el Catálogo:</strong> Navegar por la línea completa de vinos de la bodega, con
+                descripciones ricas en detalles sobre la uva, el proceso de vinificación y las notas de cata.
+              </li>
+              <li>
+                <strong>Narrativa de la Marca:</strong> Dedicar secciones a la historia de la bodega, la geología del
+                viñedo (de ahí el nombre "Piedra Infinita") y las prácticas de sostenibilidad, fortaleciendo la conexión
+                emocional con el consumidor.
+              </li>
+              <li>
+                <strong>Experiencia de Usuario:</strong> Ofrecer una experiencia de navegación fluida y visualmente
+                atractiva, permitiendo a los amantes del vino encontrar información clave rápidamente.
+              </li>
+            </ul>
+
+            <h4>🖥️ Tecnologías de Implementación de la Maqueta</h4>
+            <br>
+            <p>
+              La interfaz ha sido implementada con un enfoque en la modernidad, la estabilidad visual y la completa
+              adaptabilidad a cualquier dispositivo.
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>HTML (HyperText Markup Language):</strong> Actúa como el esqueleto estructural de toda la
+                aplicación. Se utiliza para la organización lógica del contenido, definiendo las secciones de la bodega,
+                las fichas técnicas de cada vino, la galería de imágenes del viñedo y el diseño de la estructura de
+                navegación.
+              </li>
+              <li>
+                <strong>CSS (Cascading Style Sheets):</strong> Aplica el estilo visual y la atmósfera que requiere una
+                marca de vino premium. El CSS establece la paleta de colores (probablemente tonos terrosos, borgoñas y
+                blancos limpios), la tipografía elegante y la disposición de elementos para que el vino y el paisaje
+                sean
+                los protagonistas visuales.
+              </li>
+              <li>
+                <strong>Bootstrap (Framework CSS/JavaScript):</strong> La elección de Bootstrap garantiza que la maqueta
+                sea completamente responsive (adaptable). Esto es crucial para un producto premium, ya que asegura que
+                la
+                experiencia de navegación sea impecable, ya sea que el usuario visite la web desde una computadora de
+                escritorio, una tablet o un teléfono móvil. Además, Bootstrap facilita el uso de componentes de interfaz
+                estándar y elegantes, como carruseles para destacar cosechas, tarjetas de productos y menús de
+                navegación profesionales.
+              </li>
+            </ul>
+
+            <p>
+              En resumen, esta maqueta no solo es un diseño, sino una base técnica sólida que refleja la alta calidad y
+              el compromiso de la Bodega "Piedra Infinita" con sus valores.
+            </p>
+          </section>
+
+          <section id="galaxia">
+            <h2>Galaxia</h2>
+            <div class="galery">
+              <a href="img/proyectos/galaxia/1.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/galaxia/1.png" alt="Galaxia 1" /></a>
+              <a href="img/proyectos/galaxia/2.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/galaxia/2.png" alt="Galaxia 2" /></a>
+              <a href="img/proyectos/galaxia/3.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/galaxia/3.png" alt="Galaxia 3" /></a>
+              <a href="img/proyectos/galaxia/4.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/galaxia/4.png" alt="Galaxia 4" /></a>
+              <a href="img/proyectos/galaxia/galaxia.jpg" target="_blank"><img class="foto-1"
+                  src="img/proyectos/galaxia/galaxia.jpg" alt="Galaxia 5" /></a>
+              <a href="img/responsiv/galaxia.png" target="_blank"><img class="foto-1" src="img/responsiv/galaxia.png"
+                  alt="Galaxia 6" /></a>
+            </div>
+            <h4>🍷 Descripción Detallada: Maqueta de la Aplicación Web "Piedra Infinita"</h4>
+            <p>
+              La maqueta de la aplicación web "Piedra Infinita" está diseñada para ser el hogar virtual y la principal
+              plataforma digital de la bodega homónima. Su propósito fundamental es doble: promover y facilitar la
+              adquisición de sus productos de alta calidad, y al mismo tiempo, resaltar el profundo compromiso de la
+              bodega con el entorno natural, la filosofía de producción sostenible y la identidad de sus terroirs.
+              <br>
+              La interfaz busca transmitir una sensación de elegancia, calidad y respeto por la naturaleza, elementos
+              clave de la marca.
+            </p>
+
+            <h4>🎯 Objetivo y Propósito de la Aplicación</h4>
+            <p>
+              La plataforma sirve como un escaparate digital donde los usuarios pueden:
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>Explorar el Catálogo:</strong> Navegar por la línea completa de vinos de la bodega, con
+                descripciones ricas en detalles sobre la uva, el proceso de vinificación y las notas de cata.
+              </li>
+              <li>
+                <strong>Narrativa de la Marca:</strong> Dedicar secciones a la historia de la bodega, la geología del
+                viñedo (de ahí el nombre "Piedra Infinita") y las prácticas de sostenibilidad, fortaleciendo la conexión
+                emocional con el consumidor.
+              </li>
+              <li>
+                <strong>Experiencia de Usuario:</strong> Ofrecer una experiencia de navegación fluida y visualmente
+                atractiva, permitiendo a los amantes del vino encontrar información clave rápidamente.
+              </li>
+            </ul>
+
+            <h4>🖥️ Tecnologías de Implementación de la Maqueta</h4>
+            <p>
+              La interfaz ha sido implementada con un enfoque en la modernidad, la estabilidad visual y la completa
+              adaptabilidad a cualquier dispositivo.
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>HTML (HyperText Markup Language):</strong> Actúa como el esqueleto estructural de toda la
+                aplicación. Se utiliza para la organización lógica del contenido, definiendo las secciones de la bodega,
+                las fichas técnicas de cada vino, la galería de imágenes del viñedo y el diseño de la estructura de
+                navegación.
+              </li>
+              <li>
+                <strong>CSS (Cascading Style Sheets):</strong> Aplica el estilo visual y la atmósfera que requiere una
+                marca de vino premium. El CSS establece la paleta de colores (probablemente tonos terrosos, borgoñas y
+                blancos limpios), la tipografía elegante y la disposición de elementos para que el vino y el paisaje
+                sean
+                los protagonistas visuales.
+              </li>
+              <li>
+                <strong>Bootstrap (Framework CSS/JavaScript):</strong> La elección de Bootstrap garantiza que la maqueta
+                sea completamente responsive (adaptable). Esto es crucial para un producto premium, ya que asegura que
+                la
+                experiencia de navegación sea impecable, ya sea que el usuario visite la web desde una computadora de
+                escritorio, una tablet o un teléfono móvil. Además, Bootstrap facilita el uso de componentes de interfaz
+                estándar y elegantes, como carruseles para destacar cosechas, tarjetas de productos y menús de
+                navegación profesionales.
+              </li>
+            </ul>
+
+            <p class="text-muted mt-4">
+              En resumen, esta maqueta no solo es un diseño, sino una base técnica sólida que refleja la alta calidad y
+              el
+              compromiso de la Bodega "Piedra Infinita" con sus valores.
+            </p>
+
+
+          </section>
+
+          <section id="bttf">
+            <h2>BTTF</h2>
+            <div class="galery">
+              <a href="img/proyectos/bttf/bttf.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/bttf/bttf.png" alt="BTTF 1" /></a>
+              <a href="img/proyectos/bttf/bttf2.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/bttf/bttf2.png" alt="BTTF 2" /></a>
+              <a href="img/proyectos/bttf/bttf3.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/bttf/bttf3.png" alt="BTTF 3" /></a>
+              <a href="img/proyectos/bttf/bttf4.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/bttf/bttf4.png" alt="BTTF 4" /></a>
+              <a href="img/proyectos/bttf/bttf5.png" target="_blank"><img class="foto-1"
+                  src="img/proyectos/bttf/bttf5.png" alt="BTTF 5" /></a>
+              <a href="img/responsiv/bttf.png" target="_blank"><img class="foto-1" src="img/responsiv/bttf.png"
+                  alt="BTTF"></a>
+            </div>
+            <h4>🚀 Arquitectura General y Filosofía de Diseño</h4>
+            <p>
+              El proyecto es una wiki interactiva temática de alta complejidad que funciona como una aplicación de una
+              sola página (SPA) impulsada por JavaScript. Su filosofía se basa en la separación estricta de
+              responsabilidades (HTML para la estructura, CSS para la presentación, JS para el comportamiento) y una
+              arquitectura modular y escalable.
+            </p>
+
+            <h4>🧱 Estructura Semántica (HTML)</h4>
+            <p>
+              El HTML actúa como el esqueleto lógico y semántico del sitio, utilizando etiquetas de HTML5 para una mejor
+              comprensión de la estructura por parte de los motores de búsqueda (SEO) y lectores de pantalla:
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>Jerarquía de Clases:</strong> El documento utiliza etiquetas semánticas de HTML5 (`header`,
+                `aside`, `main`, `footer`) para definir claramente la zona de navegación, contenido complementario y el
+                área focal, demostrando una comprensión profesional de la estructura.
+              </li>
+              <li>
+                <strong>Modularidad:</strong> Contiene 12 secciones principales con IDs únicos para navegación interna y
+                **17 contenedores dinámicos que son llenados completamente por JavaScript, facilitando la gestión y el
+                mantenimiento del contenido.
+              </li>
+            </ul>
+
+            <h4>🎨 Estrategia de Diseño Visual (CSS)</h4>
+            <p>
+              El CSS crea una estética híbrida que combina el clasicismo de Wikipedia con la ambientación
+              retro-futurista de los 80s y se enfoca en la responsividad:
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>Layout Multicapa:</strong> El diseño se construye con 4 capas superpuestas (Fondo decorativo,
+                Navegación sticky, Contenido principal y Overlays Modales) con un manejo preciso del `z-index`. Utiliza
+                Flexbox horizontal para el container principal.
+              </li>
+              <li>
+                <strong>Responsividad:</strong> Se utiliza una filosofía Mobile-first implícita usando técnicas
+                avanzadas como CSS Grid con `auto-fit` y `minmax()` para adaptación automática de galerías. Un único
+                media query principal gestiona el cambio de layout a columna en móviles.
+              </li>
+              <li>
+                <strong>Tematización:</strong> Incluye un sistema de modo oscuro completo que se alterna mediante
+                JavaScript, cambiando colores de fondo y texto para mantener el contraste y el mood.
+              </li>
+            </ul>
+
+            <h4>⚡ Interactividad y Comportamiento (JavaScript)</h4>
+            <p>
+              El código es JavaScript vanilla puro (sin frameworks), controlando toda la lógica de negocio y la
+              interactividad avanzada:
+            </p>
+            <ul class="card-list">
+              <li>
+                <strong>Carga de Datos Robusta:</strong> El sistema utiliza la función `loadData()` para hacer fetch a
+                un archivo `contenido.json`. Si falla, utiliza datos de respaldo (fallback data) codificados en el mismo
+                JS (`useFallbackData()`), garantizando la funcionalidad.
+              </li>
+              <li>
+                <strong>Sistemas Interactivos Complejos:</strong> El JS maneja múltiples sistemas como un Quiz
+                Interactivo (validación de respuestas, feedback visual), un Mini-Juego con `canvas` (control de teclado,
+                detección de colisiones) y una Calculadora de Viajes que gestiona fechas y calcula datos temáticos (1.21
+                GW).
+              </li>
+              <li>
+                <strong>Optimización y Gamificación:</strong> Utiliza `setInterval`/`setTimeout` para contadores y el
+                reloj en tiempo real, junto con funciones de cleanup. Incluye un sistema de logros (`achievements`) que
+                se desbloquea al interactuar con el sitio.
+              </li>
+            </ul>
+
+            <h4>🎯 Secciones Clave de Contenido</h4>
+            <p>
+              El área principal (`main`) se divide en 12 secciones temáticas, incluyendo las siguientes áreas de foco:
+            </p>
+            <ul class="card-list">
+              <li><strong>INTRODUCCIÓN (`#intro`):</strong> Con un *Info-box* flotante y contadores dinámicos.</li>
+              <li><strong>ESTADÍSTICAS (`#estadisticas`):</strong> Muestra 4 cajas de datos generadas 100% por
+                JavaScript.</li>
+              <li><strong>LA TRILOGÍA (`#trilogia`):</strong> Grid de 3 tarjetas de películas con interacción para ver
+                sinopsis.</li>
+              <li><strong>DELOREAN (`#lorean`):</strong> Sección extensa con tabla de especificaciones técnicas y
+                **ASCII Art** temático.</li>
+              <li><strong>CALCULADORA, QUIZ y MINI-JUEGO:</strong> Las secciones más interactivas, completamente
+                dinámicas y controladas por JS.</li>
+            </ul>
+
+            <p>
+              En conclusión, este HTML implementa una wiki interactiva temática de nivel profesional que combina
+              contenido editorial rico con funcionalidades web modernas.
+            </p>
+          </section>
+        </div>
+
+
+        <div class="preview" data-target="p-2">
+          <i class="fas fa-times"></i>
+
+          <h2>Currículums y Portafolios</h2>
+
+          <p>
+            Tu trayectoria profesional es única y merece ser presentada de forma excepcional. Aquí encontrarás ejemplos
+            de currículums y portafolios con diseños personalizados que te ayudarán a destacar tus habilidades y a
+            causar una excelente primera impresión.
+          </p>
+
+          <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 6">
+            <div class="list">
+              <a href="#creativo">
+                <div class="item" style="--position: 1">
+                  <h4>Creativo</h4>
+                  <img src="img/cv/cv1.png" alt="Creativo" />
+                </div>
+              </a>
+
+              <a href="#visual">
+                <div class="item" style="--position: 2">
+                  <h4>CV moderno</h4>
+                  <img src="img/cv/cv2.png" alt="Moderno" />
+                </div>
+              </a>
+
+              <a href="#cronos">
+                <div class="item" style="--position: 3">
+                  <h4>CV Cronológico Clásico</h4>
+                  <img src="img/cv/cv3.png" alt="Cronos" />
+                </div>
+              </a>
+
+              <a href="#mini">
+                <div class="item" style="--position: 4">
+                  <h4>Minimalista</h4>
+                  <img src="img/portfolio-web/mini3.png" alt="Mini" />
+                </div>
+              </a>
+
+              <a href="#personal">
+                <div class="item" style="--position: 5">
+                  <h4>Personal</h4>
+                  <img src="img/portfolio-web/personal.jpg" alt="Personal" />
+                </div>
+              </a>
+
+              <a href="#data">
+                <div class="item" style="--position: 6">
+                  <h4>Dashboard</h4>
+                  <img src="img/portfolio-web/dashboard.png" alt="Dashboard" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <section id="creativo">
+            <h2>CV Creativo con Elementos Gráficos</h2>
+            <div class="galery">
+              <a href="img/cv/cv1.png" target="_blank"><img class="card-dos" src="img/cv/cv1.png" alt="Creativo"></a>
+            </div>
+
+            <h4>CV Creativo con Elementos Gráficos (Para industrias Creativas, Menos ATS-Friendly)</h4>
+            <p>
+              Diseñado para roles donde la creatividad es clave (diseño, marketing, arte). Utiliza colores, tipografías
+              más originales y elementos gráficos, lo que lo hace menos ideal para ATS, pero muy impactante visualmente.
+            </p>
+
+            <ul class="card-list">
+              <li><strong>Estilo:</strong> Es un CV extremadamente visual, artístico y muy moderno. Está diseñado más
+                como un "Portafolio" o Curriculum Vitae Gráfico que como un CV tradicional.</li>
+              <li><strong>Diseño:</strong> Domina el uso de colores, manchas de acuarela, y elementos gráficos como
+                diagramas de burbujas, líneas de tiempo y barras de habilidad visuales (no textuales). Incluye una foto
+                en un círculo con fondo colorido.</li>
+              <li><strong>Organización:</strong> La información parece distribuirse de forma muy libre y creativa en el
+                espacio. Las secciones principales como PROFILE, EXPERIENCE, EDUCATION y SKILLS son visibles, pero el
+                contenido dentro de ellas es mayormente gráfico.</li>
+              <li><strong>Filtro ATS:</strong> La compatibilidad con ATS es extremadamente baja (casi nula). El diseño
+                depende fuertemente de imágenes, gráficos, diagramas, y texto no estructurado que el software ATS no
+                puede interpretar o leer correctamente. El sistema probablemente solo recuperaría una pequeña porción
+                del texto.</li>
+              <li><strong>Uso Recomendado:</strong> Absolutamente no apto para sistemas de aplicación en línea. Es
+                perfecto para entregar personalmente, adjuntar a un portafolio digital, o usar en industrias puramente
+                creativas (diseño gráfico, arte, moda) donde el reclutador es una persona que valora la expresión visual
+                por encima de la estructura formal.</li>
+            </ul>
+
+          </section>
+
+          <section id="visual">
+            <h2>CV moderno y visual</h2>
+            <div class="galery">
+            <a href="img/cv/cv2.png" target="_blank"><img class="card-dos" src="img/cv/cv2.png" alt="Moderno"></a>
+            </div>
+            <p>
+              CV con Toques de Color y Iconografía (Equilibrio entre Diseño y ATS) </p>
+            <ul class="card-list">
+              <li><strong>Estilo:</strong> Es un CV moderno y visual con un diseño de dos columnas (una principal para
+                la información y una lateral de color azul para datos de contacto, habilidades e íconos).</li>
+              <li><strong>Diseño:</strong> Utiliza una tipografía limpia y clara. La sección lateral azul con íconos y
+                la barra de título horizontal le dan un toque visualmente atractivo y bien estructurado.</li>
+              <li><strong>Organización:</strong> La información está bien segmentada en bloques con títulos claros como
+                CONTACT, SKILLS, y EXPERIENCE.</li>
+              <li><strong>Filtro ATS:</strong> La estructura de dos columnas y el uso de elementos gráficos (íconos)
+                pueden reducir su compatibilidad con los ATS, ya que estos sistemas a menudo tienen dificultades para
+                parsear (leer) información en múltiples columnas o dentro de gráficos/tablas, pudiendo mezclar el orden
+                o ignorar datos.</li>
+              <li><strong>Uso Recomendado:</strong> Ideal para roles creativos, diseño o donde la presentación visual es
+                valorada, o para ser leído directamente por un reclutador humano.</li>
+            </ul>
+          </section>
+
+          <section id="cronos">
+            <h2>CV Cronológico Clásico (Muy Compatible con ATS)</h2>
+            <div class="galery">
+            <a href="img/cv/cv3.png" target="_blank"><img class="card-dos" src="img/cv/cv3.png" alt="Cronos"></a>
+            </div>
+            <p>
+              Este es el formato más tradicional y seguro para ATS. Presenta la experiencia laboral en orden cronológico
+              inverso con encabezados claros y sin adornos. </p>
+
+            <ul class="card-list">
+              <li><strong>Estilo:</strong> Es un CV tradicional o clásico con un diseño simple, minimalista y enfocado
+                en el texto.</li>
+              <li><strong>Diseño:</strong> Presenta un formato de una sola columna, predominantemente blanco y negro (o
+                escala de grises), sin elementos gráficos o íconos que distraigan.</li>
+              <li><strong>Organización:</strong> Sigue una estructura lineal y cronológica (parece ser un CV cronológico
+                inverso o funcional, dadas las secciones de EXPERIENCE, EDUCATION y SKILLS ordenadas de arriba abajo).
+                Utiliza títulos de sección grandes y claros.</li>
+              <li><strong>Filtro ATS:</strong> Su formato de una sola columna, la tipografía estándar y la ausencia de
+                gráficos lo hacen altamente compatible con los sistemas ATS. El texto es fácil de escanear y categorizar
+                por el software..</li>
+              <li><strong>Uso Recomendado:</strong> Es el formato más seguro y recomendado para la mayoría de las
+                industrias, especialmente en empresas grandes que utilizan ATS para el primer filtrado de candidatos.
+              </li>
+            </ul>
+          </section>
+
+          <section id="mini">
+            <h2>Portfolio Minimalista</h2>
+            <div class="galery">
+              <a href="img/portfolio-web/mini.png" target="_blank"><img class="foto-1" src="img/portfolio-web/mini.png"
+                  alt="Mini 1" /></a>
+              <a href="img/portfolio-web/mini2.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/mini2.png" alt="Mini 2" /></a>
+              <a href="img/portfolio-web/mini3.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/mini3.png" alt="Mini 3" /></a>
+              <a href="img/portfolio-web/mini4.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/mini4.png" alt="Mini 4" /></a>
+
+            </div>
+
+            <p>
+              Esta imagen muestra un monitor con un diseño limpio y mucho espacio en blanco. Hay un título simple con el
+              nombre del profesional y su área, una barra de navegación discreta y una sola imagen destacada del
+              trabajo, con un llamado a la acción sutil.
+            </p>
+
+            <h3>Características Clave</h3>
+
+            <ul class="card-list">
+              <li><strong>Espacio en blanco:</strong> Uso abundante de espacios en blanco (o "espacio negativo") para
+                crear un diseño aireado y centrado.</li>
+              <li><strong>Tipografía nítida: </strong> Fuentes claras y fáciles de leer.</li>
+              <li><strong>Paleta de colores reducida:</strong> A menudo se limita a blanco, negro y un color de acento.
+              </li>
+              <li><strong>Énfasis en el trabajo: </strong> El diseño se quita de en medio, permitiendo que las imágenes
+                y los proyectos hablen por sí mismos.</li>
+              <li><strong>Uso Recomendado:</strong> Diseñadores gráficos, fotógrafos, artistas plásticos y cualquier
+                profesional que quiera una presentación elegante y enfocada en la calidad visual de su trabajo.</li>
+              <li><strong>Grid Layout - Diseño de Malla:</strong> En la page "Proyectos", el estilo organiza el
+                contenido de manera estructurada, facilitando la navegación y la visualización de múltiples proyectos.
+                El contenido (generalmente miniaturas de proyectos) se dispone en filas y columnas uniformes, como una
+                galería de Pinterest o Instagram.</li>
+            </ul>
+          </section>
+
+          <section id="personal">
+            <h2>Portfolio Minimalista, personal y profesional.</h2>
+            <div class="galery">
+              <a href="img/portfolio-web/personal.jpg" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/personal.jpg" alt="Personal 1" /></a>
+              <a href="img/portfolio-web/personal2.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/personal2.png" alt="Personal 2" /></a>
+              <a href="img/portfolio-web/personal3.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/personal3.png" alt="Personal 3" /></a>
+              <a href="img/portfolio-web/personal4.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/personal4.png" alt="Personal 4" /></a>
+              <a href="img/portfolio-web/personal5.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/personal5.png" alt="Personal 5" /></a>
+
+            </div>>
+
+            <h3>Características Clave</h3>
+
+            <ul class="card-list">
+              <li><strong>Énfasis en el Espacio y la Claridad: </strong> A pesar del color rojo vibrante (que es una
+                elección audaz), el diseño general es muy limpio. Hay mucho espacio alrededor de los elementos clave (la
+                foto, el texto, los botones), lo que permite que cada uno respire y se destaque.</li>
+              <li><strong>Contenido Directo y Conciso: </strong> La información principal (nombre, título profesional,
+                una breve descripción) se presenta de manera directa. No hay elementos distractores.</li>
+              <li><strong>Navegación Simple: </strong> La barra de navegación es clara y sencilla, con enlaces estándar
+                como "Home", "Services", "Skills", etc.
+              </li>
+              <li><strong>Foco en el Individuo: </strong> La gran imagen de perfil y el texto "Hi, It's Alex" lo hacen
+                muy personal, lo cual es común en portafolios minimalistas que buscan crear una conexión directa con el
+                visitante.</li>
+              <li><strong>Paleta de Colores Definida: </strong> Aunque no es monocromático, utiliza una paleta de
+                colores muy limitada (rojo y blanco principalmente, con toques de gris/negro en la imagen y los iconos).
+                El rojo actúa como un color de acento muy fuerte que, a pesar de su intensidad, se usa de forma
+                controlada.</li>
+            </ul>
+            <p>
+              Podría decirse que tiene elementos de un estilo Personal/Profesional, que a menudo se entrelaza con el
+              minimalismo para crear una marca personal fuerte.
+              En resumen, la limpieza, el enfoque en el contenido esencial y la ausencia de distracciones lo colocan
+              firmemente en la categoría de Minimalista.
+            </p>
+          </section>
+
+          <section id="data">
+            <h2>Portfolio (Dashboard Personal)</h2>
+            <div class="galery">
+              <a href="img/portfolio-web/dashboard.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/dashboard.png" style="border: .5px solid #fff;" alt="Dashboard 1" /></a>
+              <a href="img/portfolio-web/dashboard2.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/dashboard2.png" alt="Dashboard 2" /></a>
+              <a href="img/portfolio-web/dashboard3.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/dashboard3.png" alt="Dashboard 3" /></a>
+              <a href="img/portfolio-web/dashboard4.png" target="_blank"><img class="foto-1"
+                  src="img/portfolio-web/dashboard4.png" alt="Dashboard 4" /></a>
+
+            </div>>
+
+            <h3>Clasificación del Estilo</h3>
+
+            <ul class="card-list">
+              <li><strong>Data-Driven: </strong> La forma en que se presenta la información es a través de visualizaciones de datos (gráficos de radar, barras, líneas, etc.), en lugar de solo texto o imágenes de proyectos.</li>
+              <li><strong>Dashboard Personal: </strong> Imita la estructura y la funcionalidad de un panel de control o un sistema operativo, ofreciendo una experiencia altamente modular y organizada.</li>
+              <li><strong>Ideal para: </strong> Desarrolladores backend, analistas de datos, ingenieros de software o cualquier profesional cuyo trabajo pueda cuantificarse y beneficiarse de una visualización estructurada.
+              </li>
+            </ul>
+            <p>
+              Este estilo (Data-Driven (Basado en Datos) / Dashboard Personal ) es un paso intermedio entre el minimalismo (que es sencillo de estructurar) y las animaciones 3D complejas, ya que requiere incorporar y manejar librerías externas de visualización de datos. </p>
+          </section>
+        </div>
+
+        <div class="preview" data-target="p-3">
+          <i class="fas fa-times"></i>
+
+          <h3>Diseño de Material Impreso</h3>
+
+          <p>
+            Aunque vivamos en un mundo digital, el material impreso sigue siendo una herramienta poderosa. En esta
+            sección, verás cómo mis diseños de volantes y tarjetas personales combinan creatividad y estrategia para
+            dejar una impresión duradera.
+          </p>
+
+          <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 5">
+            <div class="list">
+              <a href="#astro">
+                <div class="item" style="--position: 1">
+                  <h4>Astro</h4>
+                  <img src="img/astro.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#canva">
+                <div class="item" style="--position: 2">
+                  <h4>Canva</h4>
+                  <img src="img/canva.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#bootstrap">
+                <div class="item" style="--position: 3">
+                  <h4>Bootstrap</h4>
+                  <img src="img/bootstrap.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#css">
+                <div class="item" style="--position: 4">
+                  <h4>CSS</h4>
+                  <img src="img/css.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#figma">
+                <div class="item" style="--position: 5">
+                  <h4>Figma</h4>
+                  <img src="img/figma2.png" alt="" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <section id="astro">
+            <h2>Astro</h2>
+            <a href="img/astro.png" target="_blank"><img src="img/astro.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="canva">
+            <h2>Canva</h2>
+            <a href="img/canva.png" target="_blank"><img src="img/canva.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="bootstrap">
+            <h2>Bootstrap</h2>
+            <a href="img/bootstrap.png" target="_blank"><img src="img/bootstrap.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="css">
+            <h2>CSS</h2>
+            <a href="img/css.png" target="_blank"><img src="img/css.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="figma">
+            <h2>Figma</h2>
+            <a href="img/figma.png" target="_blank"><img src="img/figma.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+        </div>
+
+        <div class="preview" data-target="p-4">
+          <i class="fas fa-times"></i>
+
+          <h3>Presentaciones y Álbumes</h3>
+          <p>
+            Cada historia merece ser contada de una manera especial. Aquí te presento una muestra de presentaciones y
+            álbumes digitales que he diseñado, pensados para destacar momentos importantes, ya sea en una reunión de
+            negocios o en un recuerdo familiar.
+          </p>
+
+          <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 5">
+            <div class="list">
+              <a href="#astro">
+                <div class="item" style="--position: 1">
+                  <h4>Astro</h4>
+                  <img src="img/astro.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#canva">
+                <div class="item" style="--position: 2">
+                  <h4>Canva</h4>
+                  <img src="img/canva.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#bootstrap">
+                <div class="item" style="--position: 3">
+                  <h4>Bootstrap</h4>
+                  <img src="img/bootstrap.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#css">
+                <div class="item" style="--position: 4">
+                  <h4>CSS</h4>
+                  <img src="img/css.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#figma">
+                <div class="item" style="--position: 5">
+                  <h4>Figma</h4>
+                  <img src="img/figma2.png" alt="" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <section id="astro">
+            <h2>Astro</h2>
+            <a href="img/astro.png" target="_blank"><img src="img/astro.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="canva">
+            <h2>Canva</h2>
+            <a href="img/canva.png" target="_blank"><img src="img/canva.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="bootstrap">
+            <h2>Bootstrap</h2>
+            <a href="img/bootstrap.png" target="_blank"><img src="img/bootstrap.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="css">
+            <h2>CSS</h2>
+            <a href="img/css.png" target="_blank"><img src="img/css.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="figma">
+            <h2>Figma</h2>
+            <a href="img/figma.png" target="_blank"><img src="img/figma.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+        </div>
+
+        <div class="preview" data-target="p-5">
+          <i class="fas fa-times"></i>
+
+          <h3>Invitaciones Digitales</h3>
+
+
+          <p>
+            Haz que tus eventos comiencen con una chispa de creatividad. En esta galería, explora mis invitaciones
+            digitales, tanto animadas como estáticas, diseñadas para capturar la esencia de cada celebración y emocionar
+            a tus invitados desde el primer clic.
+          </p>
+
+          <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 5">
+            <div class="list">
+              <a href="#astro">
+                <div class="item" style="--position: 1">
+                  <h4>Astro</h4>
+                  <img src="img/astro.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#canva">
+                <div class="item" style="--position: 2">
+                  <h4>Canva</h4>
+                  <img src="img/canva.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#bootstrap">
+                <div class="item" style="--position: 3">
+                  <h4>Bootstrap</h4>
+                  <img src="img/bootstrap.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#css">
+                <div class="item" style="--position: 4">
+                  <h4>CSS</h4>
+                  <img src="img/css.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#figma">
+                <div class="item" style="--position: 5">
+                  <h4>Figma</h4>
+                  <img src="img/figma2.png" alt="" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <section id="astro">
+            <h2>Astro</h2>
+            <a href="img/astro.png" target="_blank"><img src="img/astro.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="canva">
+            <h2>Canva</h2>
+            <a href="img/canva.png" target="_blank"><img src="img/canva.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="bootstrap">
+            <h2>Bootstrap</h2>
+            <a href="img/bootstrap.png" target="_blank"><img src="img/bootstrap.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="css">
+            <h2>CSS</h2>
+            <a href="img/css.png" target="_blank"><img src="img/css.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="figma">
+            <h2>Figma</h2>
+            <a href="img/figma.png" target="_blank"><img src="img/figma.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+        </div>
+
+
+        <div class="preview" data-target="p-6">
+          <i class="fas fa-times"></i>
+
+          <h3>Diseño de Menús </h3>
+
+          <p>
+            ¿Tus platos merecen un menú que despierte el apetito y eleve la experiencia? Aquí te muestro ejemplos de
+            cómo creo menús que no solo enumeran, sino que también venden y guían al comensal. Descubre la clave para
+            una carta visualmente irresistible, optimizada para la rentabilidad y que cuenta la historia de tu cocina.
+          </p>
+
+          <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 5">
+            <div class="list">
+              <a href="#astro">
+                <div class="item" style="--position: 1">
+                  <h4>Astro</h4>
+                  <img src="img/astro.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#canva">
+                <div class="item" style="--position: 2">
+                  <h4>Canva</h4>
+                  <img src="img/canva.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#bootstrap">
+                <div class="item" style="--position: 3">
+                  <h4>Bootstrap</h4>
+                  <img src="img/bootstrap.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#css">
+                <div class="item" style="--position: 4">
+                  <h4>CSS</h4>
+                  <img src="img/css.png" alt="" />
+                </div>
+              </a>
+
+              <a href="#figma">
+                <div class="item" style="--position: 5">
+                  <h4>Figma</h4>
+                  <img src="img/figma2.png" alt="" />
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <section id="astro">
+            <h2>Astro</h2>
+            <a href="img/astro.png" target="_blank"><img src="img/astro.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="canva">
+            <h2>Canva</h2>
+            <a href="img/canva.png" target="_blank"><img src="img/canva.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="bootstrap">
+            <h2>Bootstrap</h2>
+            <a href="img/bootstrap.png" target="_blank"><img src="img/bootstrap.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="css">
+            <h2>CSS</h2>
+            <a href="img/css.png" target="_blank"><img src="img/css.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+
+          <section id="figma">
+            <h2>Figma</h2>
+            <a href="img/figma.png" target="_blank"><img src="img/figma.png" alt=""></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              vel aperiam ex soluta veritatis natus, atque ab repudiandae
+              eaque fuga, eos doloremque esse odit officiis dolorum incidunt
+              dolor hic voluptatum.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="botones-fin">
+    <!-- Pagina anterior-->
+
+    <a id="backButton" onClick="history.go(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#f73030"
+          d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+      </svg></a>
+
+    <!--Home -->
+
+    <div class="ultimo">
+      <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path fill="#f73030"
+            d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z" />
+        </svg></a>
+    </div>
+
+    <!-- Inicio de Pagina -->
+
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path fill="#f73030"
+          d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm11.3-387.3c-6.2-6.2-16.4-6.2-22.6 0l-104 104c-4.6 4.6-5.9 11.5-3.5 17.4s8.3 9.9 14.8 9.9l72 0 0 104c0 13.3 10.7 24 24 24l16 0c13.3 0 24-10.7 24-24l0-104 72 0c6.5 0 12.3-3.9 14.8-9.9s1.1-12.9-3.5-17.4l-104-104z" />
+      </svg></a>
+  </div>
+
+  <div class="guarda"><img src="img/banner-guarda.png" alt="guarda" /></div>
+  <footer>
+    <div class="marquee">
+      <div>
+        <span>Todos los derechos reservados - Jorge Daniel Cataldo - DSL -
+          Copyright &copy; -2025 - Argentina
+        </span>
+      </div>
+    </div>
+
+    <div class="qr">
+      <img src="img/cvjdcQR.png" alt="" />
+      <a href="pdf/CVITATS.pdf" download="CVITATS.pdf" target="_blank">
+        <button class="btn-1">Descargar CV</button>
+      </a>
+    </div>
+
+    <h3>Escanea el QR o haz click en el botón y descarga mi CV</h3>
+    <div class="social-icons-footer">
+      <a href="mailto:danielcataldo673@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+      <a href="https://wa.me/5491125954784" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/jorgedanielcataldo" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/jorge-daniel-cataldo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/DanielCataldo673/DanielCataldo673" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="container-card-footer">
+      <div class="card-footer">
+        <a href="proyectos.html">
+          <div class="face front">
+            <img class="card-footer-img" src="img/proyectos.jpeg" alt="imagen1" />
+            <h3>Proyectos</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-footer">
+        <a href="portfolio.html">
+          <div class="face front">
+            <img src="img/porfolio.jpeg" alt="imagen5" />
+            <h3>Portfolio</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-footer">
+        <a href="habilidades.html">
+          <div class="face front">
+            <img src="img/habilidades.jpeg" alt="imagen2" />
+            <h3>Habilidades</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-footer">
+        <a href="educacion.html">
+          <div class="face front">
+            <img src="img/educacion.jpeg" alt="imagen1" />
+            <h3>Educación</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-footer">
+        <a href="contacto.html">
+          <div class="face front">
+            <img src="img/contacto.jpeg" alt="imagen1" />
+            <h3>Contacto</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/portfolio.js"></script>
+</body>
+
+</html>

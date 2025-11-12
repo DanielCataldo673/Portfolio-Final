@@ -1,0 +1,164 @@
+:root {
+    --texto-rojo: #f73030;
+    --texto-blanco: #ffffff;
+    --texto-negro: #000000;
+    --fondo-negro: #000000;
+    --fondo-rojo: rgba(247, 48, 48, 0.1);
+    --fuente-principal: 'Merriweather', sans-serif;
+    --fuente-secundaria: "Montserrat", sans-serif;
+}
+
+/* STYLES */
+
+* {
+    font-family: var(--fuente-principal);
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fondo-negro);
+    color: var(--texto-negro);
+}
+
+
+/* MODIFICACIÓN: Ajuste del h1 y la sección */
+/* ¡AQUÍ ES DONDE AJUSTAS EL ESPACIO SUPERIOR! */
+section {
+    padding-top: 120px; /* Puedes aumentar o disminuir este valor según necesites */
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: var(--fuente-principal);
+    margin-top: 0; /* Se ha cambiado a 0 para eliminar el margen que creaba el espacio rojo */
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+}
+
+/* Párrafo de presentación mejorado */
+.presentacion {
+    font-size: 1.5rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 50px auto; /* Centrar y añadir espacio */
+}
+
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.card_container .card {
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: var(--fondo-rojo);
+    border: 0.5px solid #f1f5f9;
+    padding: 15px;
+    color: var(--texto-rojo);
+    position: relative;
+    padding-top: 80px;
+    /* Aumenta el padding para dar espacio al nuevo botón */
+}
+
+.user_content .name {
+    font-size: 1.4rem;
+    font-family: var(--fuente-principal);
+}
+
+.user_content .name {
+    font-size: 1rem;
+    font-family: var(--fuente-principal);
+}
+
+.user_content .post {
+    font-size: .9rem;
+    color: var(--texto-blanco);
+    margin: 15px 0;
+    font-weight: 400;
+    font-family: var(--texto-blanco);
+    position: relative;
+    left: 16px;
+}
+
+.user_content .about {
+    color: var(--texto-blanco);
+    font-family: var(--fuente-secundaria);
+    margin-top: 10px;
+    font-size: .8rem;
+    letter-spacing: .1vw;
+    line-height: 1.4vw;
+}
+
+.card .round_box {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    background: var(--fondo-negro) !important;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #f1f5f9;
+    border-radius: 50%;
+    z-index: 333;
+}
+
+.card .squareBox {
+    height: 90px;
+    width: 136px;
+    position: absolute;
+    top: 0;
+    right: 9%;
+    z-index: 444;
+}
+
+.card .img_box {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    z-index: 555;
+}
+
+.card .img_box img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Nuevos estilos para el botón de documentación */
+.doc-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--fondo-rojo);
+    color: var(--texto-rojo);
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: var(--fuente-secundaria);
+    font-size: 1rem;
+    border: 1px solid var(--texto-rojo);
+    transition: background-color 0.3s ease;
+}
+
+.doc-button:hover {
+    color: var(--texto-blanco);
+    box-shadow: -5px 0 30px rgba(247, 48, 48, 0.3);
+}

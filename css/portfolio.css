@@ -1,0 +1,443 @@
+:root {
+  --texto-rojo: #f73030;
+  --texto-blanco: #ffffff;
+  --texto-negro: #000000;
+  --fondo-negro: #000000;
+  --strong: #5d4037;
+  --fondo-rojo: rgba(247, 48, 48, 0.1);
+  --fondo-rojo2: rgba(247, 48, 48, 0.6);
+  --fuente-principal: "Merriweather", sans-serif;
+  --fuente-secundaria: "Montserrat", sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STYLES */
+
+* {
+  font-family: var(--fuente-principal);
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--fondo-negro);
+  color: var(--texto-negro);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: var(--fuente-principal);
+  margin-top: 10%; /* Se ha cambiado a 0 para eliminar el margen que creaba el espacio rojo */
+  line-height: 1.2;
+  color: var(--texto-rojo);
+  text-shadow: none;
+}
+
+/* Párrafo de presentación mejorado */
+.presentacion {
+  font-size: 1.5rem;
+  font-family: var(--fuente-secundaria);
+  color: var(--texto-blanco);
+  text-align: center; /* Centrar el texto para mejor visualización */
+  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
+  margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+}
+
+.container {
+  /* 1. ANCHO MÁXIMO DEL CONTENEDOR */
+  max-width: 1300px;
+  /* Centrar el contenedor en la página */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* 2. TÍTULO ARRIBA: Asegura apilamiento vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+.container .title {
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .products-container {
+  /* CONFIGURACIÓN DEL GRID: Permite que las cards de 300px se ajusten */
+  display: grid;
+  /* 'auto-fit' + 'minmax(300px, 1fr)' asegura que cada card sea de 300px ocupe 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+}
+
+.container .products-container .product {
+  /* TAMAÑO DE LA CARD */
+  width: 100%;
+  text-align: center;
+  padding: 2rem 2rem;
+  background: var(--fondo-rojo);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid var(--texto-rojo);
+  outline-offset: -1.5rem;
+  cursor: pointer;
+  border: 5px double var(--texto-rojo);
+  box-shadow: 0 5px 15px var(--texto-rojo);
+}
+
+.container .products-container .product img {
+  /* MODIFICACIÓN CLAVE: Asegura que la imagen no exceda el ancho de su contenedor */
+  width: 100%;
+  height: 350px;
+  border-radius: 3%;
+}
+
+.container .products-container .product h3 {
+  padding: 0.5rem 0;
+  font-size: 1.2vw;
+  font-family: var(--fuente-principal);
+  color: var(--texto-rojo);
+}
+
+.container .products-container .product button {
+  background-color: var(--texto-rojo);
+  border: 1px solid var(--texto-blanco);
+  border-radius: 50%;
+  color: var(--texto-blanco);
+  padding: 3px;
+  font-size: 0.7rem;
+  font-family: var(--fuente-principal);
+  width: 80px;
+  height: 40px;
+  transition: 0.1s ease-in-out 0.1s;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .products-container .product button:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 15px var(--texto-rojo);
+  border: 1px solid var(--texto-negro);
+  color: var(--texto-negro);
+}
+
+.products-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: url("/img/tec.png");
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.products-preview .preview {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: url("/img/stars.gif");
+  border: 1px solid var(--texto-rojo);
+  box-shadow: 0 5px 15px var(--texto-rojo);
+  position: relative;
+  margin: 2rem;
+  width: 80rem;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.products-preview .preview ::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra completa */
+}
+
+.products-preview .preview ext::-webkit-scrollbar-track {
+  background: var(--texto-rojo); /* Color del fondo de la barra */
+}
+
+.products-preview .preview ::-webkit-scrollbar-thumb {
+  padding: 10px;
+  margin-left: 2%;
+  background-color: var(--fondo-rojo); /* Color de la parte arrastrable */
+  border-radius: 20px; /* Redondea las esquinas del "thumb" */
+  border: 3px double var(--texto-blanco); /* Borde para el efecto de separación */
+}
+
+.products-preview .preview.active {
+  display: inline-block;
+}
+
+.products-preview .preview img {
+  width: 100px;
+  height: 100px;
+}
+
+.products-preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: var(--texto-rojo);
+  font-size: 2.5vw;
+  transition: 0.3s ease-in-out;
+}
+
+.products-preview .preview .fa-times:hover {
+  transform: rotate(90deg);
+  color: var(--texto-blanco);
+}
+
+.products-preview .preview h3 {
+  font-size: 2.5vw;
+  font-family: var(--fuente-principal);
+  color: var(--texto-rojo);
+  padding: 0.5rem 0;
+}
+
+.products-preview .preview .stars {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.products-preview .preview .stars i {
+  color: #27ae60;
+}
+
+.products-preview .preview .stars span {
+  color: #999;
+}
+
+.products-preview .preview h2 {
+  font-size: 2.8vw;
+  text-align: center;
+  color: var(--texto-rojo);
+  font-family: var(--fuente-principal);
+}
+
+.products-preview .preview h4 {
+  font-size: 1.7vw;
+  text-align: center;
+  color: var(--texto-rojo);
+  font-family: var(--fuente-principal);
+  margin-top: 1%;
+}
+
+.products-preview .preview section {
+  margin-top: 7%;
+  border-bottom: var(--texto-rojo) solid 1px;
+}
+
+.products-preview .preview section strong {
+  color: var(--texto-rojo);
+  margin-top: 3%;
+}
+
+.card-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.card-list strong {
+  color: var(--strong);
+  display: block;
+  margin-top: 10px;
+}
+
+.products-preview .preview section em {
+  background-color: var(--fondo-rojo2);
+  margin-top: 3%;
+}
+
+.products-preview .preview li,
+.products-preview .preview p {
+  line-height: 3vw;
+  letter-spacing: 0.2vw;
+  padding: 1rem 0;
+  font-size: 1.5vw;
+  color: var(--texto-blanco);
+  font-family: var(--fuente-secundaria);
+}
+
+.products-preview .preview .price {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #27ae60;
+}
+
+.products-preview .preview .buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+
+.products-preview .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: 0.1rem solid #444;
+}
+
+.products-preview .preview .buttons a.cart {
+  background: #444;
+  color: #fff;
+}
+
+.products-preview .preview .buttons a.cart:hover {
+  background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* Slider Modal */
+
+.slider {
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  /* Máscara para un efecto de desvanecimiento en los bordes */
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+.slider .list {
+  display: flex;
+  width: 100%;
+  /* El ancho mínimo ahora depende de la variable --quantity */
+  min-width: calc(var(--width) * var(--quantity)); 
+  position: relative;
+  margin-top: 2%;
+}
+
+.slider .list .item h4 {
+  font-size: 0.6vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--texto-negro);
+  background-color: rgba(252, 250, 251, 0.5);
+  font-family: var(--fuente-principal);
+  position: absolute;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  transition: filter 0.5s;
+  
+  /* CÁLCULO ARREGLADO: El retardo de la animación usa la variable --quantity */
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
+}
+.slider .list .item img {
+  width: 100%;
+  border: 2px solid var(--texto-rojo);
+}
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+.slider:hover .item {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.slider .item:hover {
+  filter: grayscale(0);
+}
+.slider[reverse="true"] .item {
+  animation: reversePlay 10s linear infinite;
+}
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/*SECTION*/
+
+.products-preview .preview section .galery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 3%;
+}
+
+.products-preview .preview section .galery img {
+  width: 100px;
+  height: 100px;
+  margin: 0.25em 1em 1em 0;
+  border-radius: 0.25em;
+  float: left;
+  transition: all 0.5s ease-in-out;
+}
+
+.products-preview .preview section .galery .foto-1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.25em;
+  float: left;
+  transition: all 0.5s ease-in-out;
+}
+
+.galery .foto-1:hover {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0px 0px 15px 15px #4c4c4c;
+  -webkit-box-shadow: 0px 0px 15px 15px #4c4c4c;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.products-preview .preview section .galery .card-dos {
+  width: 500px;
+  height: 300px;
+  border-radius: 0.25em;
+  float: left;
+}
+
+
+
+/* --- Media Queries (Ajuste para móviles y tabletas) --- */
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 768px) {
+}
