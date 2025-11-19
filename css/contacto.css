@@ -1,65 +1,331 @@
 :root {
-    --texto-rojo: #f73030;
-    --texto-blanco: #ffffff;
-    --texto-negro: #000000;
-    --fondo-negro: #000000;
-    --fondo-rojo: rgba(247, 48, 48, 0.1);
-    --fuente-principal: 'Merriweather', sans-serif;
-    --fuente-secundaria: "Montserrat", sans-serif;
+  --texto-rojo: #f73030;
+  --texto-blanco: #ffffff;
+  --texto-negro: #000000;
+  --fondo-negro: #000000;
+  --fondo-rojo: rgba(247, 48, 48, 0.1);
+  --fuente-principal: "Merriweather", sans-serif;
+  --fuente-secundaria: "Montserrat", sans-serif;
 }
 
 /* STYLES */
 
 * {
-    font-family: var(--fuente-principal);
-    scroll-behavior: smooth;
+  font-family: var(--fuente-principal);
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--fondo-negro);
-    color: var(--texto-negro);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--fondo-negro);
+  color: var(--texto-negro);
 }
 
-
-
 section {
-    padding-top: 120px; /* Puedes aumentar o disminuir este valor según necesites */
+  padding-top: 120px; /* Puedes aumentar o disminuir este valor según necesites */
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: var(--fuente-principal);
-    margin-top: 0; /* Se ha cambiado a 0 para eliminar el margen que creaba el espacio rojo */
-    line-height: 1.2;
-    color: var(--texto-rojo);
-    text-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: var(--fuente-principal);
+  margin-top: 0; /* Se ha cambiado a 0 para eliminar el margen que creaba el espacio rojo */
+  line-height: 1.2;
+  color: var(--texto-rojo);
+  text-shadow: none;
 }
 
 /* Párrafo de presentación mejorado */
 .presentacion {
-    font-size: 1.5rem;
-    font-family: var(--fuente-secundaria);
-    color: var(--texto-blanco);
-    text-align: center; /* Centrar el texto para mejor visualización */
-    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-    max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-    margin: 20px auto 50px auto; /* Centrar y añadir espacio */
+  font-size: 1.5rem;
+  font-family: var(--fuente-secundaria);
+  color: var(--texto-blanco);
+  text-align: center; /* Centrar el texto para mejor visualización */
+  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
+  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.form-container {
+  font-family: var(--fuente-principal);
+  background-color: var(--fondo-rojo);
+  padding: 30px;
+  border-radius: 3%;
+  border: 2px solid var(--texto-rojo);
+  box-shadow: 0 5px 15px var(--texto-rojo);
+  width: 100%;
+  max-width: 450px;
+}
+
+h2 {
+  font-family: var(--fuente-principal);
+  font-size: 1.7vw;
+  text-align: center;
+  color: var(--texto-rojo);
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: var(--fuente-principal);
+  font-size: 1.1vw;
+  color: var(--texto-rojo);
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--texto-rojo);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1vw;
+  font-family: var(--fuente-principal);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.required {
+  color: var(--texto-blanco);
+  font-weight: normal;
+}
+
+button[type="submit"] {
+  background-color: var(--fondo-rojo);
+  color: var(--texto-blanco);
+  padding: 12px 20px;
+  border: 1px solid var(--texto-rojo);
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--texto-negro);
+  color: var(--texto-blanco);
+  border: double var(--texto-blanco);
+}
+
+/* --- Estilos del Modal --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn,
+.close-btn-success {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus,
+.close-btn-success:hover,
+.close-btn-success:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-confirm,
+.btn-cancel,
+.btn-close-success {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-confirm {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-cancel,
+.btn-close-success {
+  background-color: #6c757d;
+  color: white;
+}
+
+.modal-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%; /* Si quieres que el logo sea circular */
+}
+
+.container-icons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0%;
+}
+
+.icons {
+  display: inline-flex;
+}
+.icons a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.icons a .layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+.icons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+.icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.icons a .layer span.fab {
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.icons a .layer span.fas {
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.icons a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+.icons a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.icons a:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.icons a:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .text {
+  color: var(--texto-rojo);
+  border-color: var(--texto-rojo);
+}
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .text {
+  color: var(--texto-rojo);
+  border-color: var(--texto-rojo);
+}
+.icons a:nth-child(3) .layer span,
+.icons a:nth-child(3) .text {
+  color: var(--texto-rojo);
+  border-color: var(--texto-rojo);
+}
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .text {
+  color: var(--texto-rojo);
+  border-color: var(--texto-rojo);
+}
+.icons a:nth-child(5) .layer span,
+.icons a:nth-child(5) .text {
+  color: var(--texto-rojo);
+  border-color: var(--texto-rojo);
+}
+.icons a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px var(--texto-rojo);
+}
+.icons a:hover:nth-child(2) .layer span {
+  box-shadow: -1px 1px 3px var(--texto-rojo);
+}
+.icons a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px var(--texto-rojo);
+}
+.icons a:hover:nth-child(4) .layer span {
+  box-shadow: -1px 1px 3px var(--texto-rojo);
+}
+.icons a:hover:nth-child(5) .layer span {
+  box-shadow: -1px 1px 3px var(--texto-rojo);
+}
+.icons a .text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+.icons a:hover .text {
+  bottom: -35px;
+  opacity: 1;
 }
 
 
-.card_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom: 3%;
-}

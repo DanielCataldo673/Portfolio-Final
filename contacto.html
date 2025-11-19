@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" style="overflow-x: hidden;">
 <!-- style="overflow-x: hidden;": Este es un estilo CSS en línea que se aplica directamente a la etiqueta <html>. Su propósito es ocultar la barra de desplazamiento horizontal (overflow-x) en la página. -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,25 +31,142 @@
       <a href="educacion.html">Educación</a>
       <a href="contacto.html">Contacto</a>
     </div>
-    
-   
+
+
   </nav>
 
-  
+
 
   <main>
     <section>
-      
+
       <h1>Contacto</h1>
-      <p class="presentacion">¿Listo para empezar un nuevo proyecto? Me encantaría saber de ti. En esta sección, encontrarás las formas de ponerte en contacto conmigo y colaborar en esa idea que tienes en mente. ¡Hablemos!
+      <p class="presentacion">¿Listo para empezar un nuevo proyecto? Me encantaría saber de ti. En esta sección,
+        encontrarás las formas de ponerte en contacto conmigo y colaborar en esa idea que tienes en mente. ¡Hablemos!
       </p>
-      <div class="card_container">
+      <div class="container-form">
+        <form id="contactForm" class="form-container">
+          <h2>Contáctanos</h2>
 
+          <div class="input-group">
+            <label for="nombre">Nombre <span class="required">*</span></label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="input-group">
+            <label for="apellido">Apellido <span class="required">*</span></label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div>
+
+          <div class="input-group">
+            <label for="asunto">Asunto <span class="required">*</span></label>
+            <select id="asunto" name="asunto" required>
+              <option value="" disabled selected>Selecciona un asunto</option>
+              <option value="consulta_proyecto">Consulta sobre un proyecto</option>
+              <option value="disponibilidad_freelance">Disponibilidad para Freelance</option>
+              <option value="propuesta_empleo_fijo">Propuesta de empleo fijo</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="consulta">Tu Consulta <span class="required">*</span></label>
+            <textarea id="consulta" name="consulta" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" id="submitBtn">Enviar Consulta</button>
+        </form>
+
+        <div id="confirmationModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Confirmación de Envío</h3>
+            <p>¿Estás seguro que deseas enviar este mensaje?</p>
+            <div class="modal-actions">
+              <button id="confirmSend" class="btn-confirm">Sí, Enviar</button>
+              <button id="cancelSend" class="btn-cancel">Cancelar</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="successModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn-success">&times;</span>
+            <img src="img/logoblacksinfondo.png" alt="Logo de Confirmación" class="modal-logo">
+            <h3>¡Mensaje Enviado con Éxito!</h3>
+            <p>Gracias por tu consulta. Pronto nos pondremos en contacto contigo.</p>
+            <button class="btn-close-success">Cerrar</button>
+          </div>
+        </div>
       </div>
-    </section>
-    
-  </main>
 
+    </section>
+    <div class="container-icons2">
+      <div class="icons">
+        <a href="https://workspace.google.com/intl/es-419_ar/gmail/" target="_blank">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fas fa-at"></span>
+          </div>
+          <div class="text">
+            Email
+          </div>
+        </a>
+        <a href="https://wa.me/5491125954784" target="_blank">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-whatsapp"></span>
+          </div>
+          <div class="text">
+            Whatsapp
+          </div>
+        </a>
+        <a href="https://www.instagram.com/jorgedanielcataldo" target="_blank">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-instagram"></span>
+          </div>
+          <div class="text">
+            Instagram
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/jorge-daniel-cataldo/" target="_blank">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-linkedin-in"></span>
+          </div>
+          <div class="text">
+            Linkedin
+          </div>
+        </a>
+        <a href="https://github.com/DanielCataldo673/DanielCataldo673" target="_blank">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-github"></span>
+          </div>
+          <div class="text">
+            GitHub
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </main>
 
   <div class="botones-fin">
 
@@ -110,48 +228,49 @@
 
     <div class="container-card-footer">
       <div class="card-footer">
-          <a href="proyectos.html">
-              <div class="face front">
-                  <img class="card-footer-img" src="img/proyectos.jpeg" alt="imagen1">
-                  <h3>Proyectos</h3>
-              </div>
-          </a>
+        <a href="proyectos.html">
+          <div class="face front">
+            <img class="card-footer-img" src="img/proyectos.jpeg" alt="imagen1">
+            <h3>Proyectos</h3>
+          </div>
+        </a>
       </div>
       <div class="card-footer">
-          <a href="portfolio.html">
-              <div class="face front">
-                  <img src="img/porfolio.jpeg" alt="imagen5">
-                  <h3>Portfolio</h3>
-              </div>
-          </a>
+        <a href="portfolio.html">
+          <div class="face front">
+            <img src="img/porfolio.jpeg" alt="imagen5">
+            <h3>Portfolio</h3>
+          </div>
+        </a>
       </div>
       <div class="card-footer">
-          <a href="habilidades.html">
-              <div class="face front">
-                  <img src="img/habilidades.jpeg" alt="imagen2">
-                  <h3>Habilidades</h3>
-              </div>
-          </a>
+        <a href="habilidades.html">
+          <div class="face front">
+            <img src="img/habilidades.jpeg" alt="imagen2">
+            <h3>Habilidades</h3>
+          </div>
+        </a>
       </div>
       <div class="card-footer">
-          <a href="educacion.html">
-              <div class="face front">
-                  <img src="img/educacion.jpeg" alt="imagen1">
-                  <h3>Educación</h3>
-              </div>
-          </a>
+        <a href="educacion.html">
+          <div class="face front">
+            <img src="img/educacion.jpeg" alt="imagen1">
+            <h3>Educación</h3>
+          </div>
+        </a>
       </div>
 
       <div class="card-footer">
-          <a href="contacto.html">
-              <div class="face front">
-                  <img src="img/contacto.jpeg" alt="imagen1">
-                  <h3>Contacto</h3>
-              </div>
-          </a>
+        <a href="contacto.html">
+          <div class="face front">
+            <img src="img/contacto.jpeg" alt="imagen1">
+            <h3>Contacto</h3>
+          </div>
+        </a>
       </div>
-  </div>
+    </div>
   </footer>
+  <script src="js/contacto.js"></script>
 </body>
 
 </html>
