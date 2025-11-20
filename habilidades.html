@@ -1,620 +1,511 @@
 <!DOCTYPE html>
 <html lang="es" style="overflow-x: hidden">
-  <!-- style="overflow-x: hidden;": Este es un estilo CSS en línea que se aplica directamente a la etiqueta <html>. Su propósito es ocultar la barra de desplazamiento horizontal (overflow-x) en la página. -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DSL</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/habilidades.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="img/icono-sin-fondo.ico" />
-  </head>
+<!-- style="overflow-x: hidden;": Este es un estilo CSS en línea que se aplica directamente a la etiqueta <html>. Su propósito es ocultar la barra de desplazamiento horizontal (overflow-x) en la página. -->
 
-  <body>
-    <nav>
-      <div>
-        <a href="index.html"
-          ><img class="logo" src="img/logowhite.png" alt="icono"
-        /></a>
-      </div>
-      <div class="nav-logo">DSL</div>
-      <div class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="proyectos.html">Proyectos</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="habilidades.html">Habilidades</a>
-        <a href="educacion.html">Educación</a>
-        <a href="contacto.html">Contacto</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSL</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/habilidades.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="img/icono-sin-fondo.ico" />
+</head>
 
-      
-    </nav>
-
-   
-
-    <main>
-      <section>
-        <h1>Habilidades</h1>
-        <p class="presentacion">
-          Mi caja de herramientas está lista para tus ideas. Aquí detallo las
-          habilidades técnicas y creativas que he cultivado para ofrecer
-          soluciones completas, desde el diseño visual hasta la funcionalidad
-          final. Echa un vistazo a lo que puedo hacer por ti.
-        </p>
-
-        <div class="card_container">
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/astro.png" alt="Astro" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Astro</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                Astro es un framework web que crea sitios web ultra rápidos.
-                Utiliza una arquitectura de "islas de interactividad" para
-                enviar el mínimo JavaScript posible. Es ideal para blogs y
-                sitios de contenido estático.
-              </p>
-              <a href="https://astro.build/" target="_blank" class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/bootstrap.png" alt="Bootstrap" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Bootstrap</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                Bootstrap es un framework de código abierto para desarrollo web.
-                Con su sistema de cuadrícula y componentes listos para usar,
-                simplifica la creación de sitios web responsivos y modernos.
-              </p>
-              <a
-                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/css.png" alt="Css" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Css</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                CSS, o Hojas de Estilo en Cascada, es un lenguaje de diseño
-                gráfico que se usa para dar estilo a los documentos web. Define
-                la tipografía, los colores, el espaciado y la apariencia de un
-                sitio.
-              </p>
-              <a
-                href="https://developer.mozilla.org/es/docs/Web/CSS"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/html.png" alt="Html" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Html</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                HTML es el lenguaje de marcado para estructurar páginas web.
-                Define el contenido (párrafos, títulos, enlaces, imágenes)
-                usando etiquetas. Es el esqueleto básico de todo sitio web.
-              </p>
-              <a
-                href="https://developer.mozilla.org/es/docs/Web/HTML"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/javascript.png" alt="JavaScript" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">JavaScript</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                JavaScript, o JS, es un lenguaje de programación que da vida a
-                las páginas web. Añade interactividad y dinamismo, permitiendo
-                animaciones, validación de formularios y mucho más.
-              </p>
-              <a
-                href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/mysql.png" alt="MySQL" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">MySQL</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                MySQL es un sistema de gestión de bases de datos relacionales de
-                código abierto. Almacena y organiza datos en tablas, utilizando
-                el lenguaje SQL para consultas y gestión.
-              </p>
-              <a
-                href="https://dev.mysql.com/doc/refman/8.0/en/"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/nodejs.jpeg" alt="Node js" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Node js</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                Node.js es un entorno de ejecución que permite usar JavaScript
-                en el servidor. Es ideal para crear aplicaciones rápidas y
-                escalables, como APIs y servicios web.
-              </p>
-              <a
-                href="https://nodejs.org/es/docs"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/php.jpeg" alt="PHP" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">PHP</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                PHP es un lenguaje de programación para el desarrollo web del
-                lado del servidor. Permite crear sitios web dinámicos, procesar
-                formularios y gestionar bases de datos.
-              </p>
-              <a
-                href="https://www.php.net/docs.php"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/reactjs.jpeg" alt="React js" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">React js</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                React es una librería de JavaScript para crear interfaces de
-                usuario. Es declarativa y basada en componentes, lo que permite
-                construir UIs complejas y dinámicas de forma eficiente.
-              </p>
-              <a
-                href="https://es.react.dev/learn"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/tailwindcss.jpeg" alt="Tailwindcss" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Tailwindcss</h4>
-              <h5 class="name2">Desarrollo</h5>
-              <p class="about">
-                Tailwind CSS es un framework de utilidad que te permite
-                construir interfaces de usuario rápidas y personalizadas. Provee
-                clases de bajo nivel para estilizar HTML directamente.
-              </p>
-              <a
-                href="https://tailwindcss.com/docs/utility-first"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/github.jpeg" alt="GitHub" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">GitHub</h4>
-              <h5 class="name2">Control de Versiones</h5>
-              <p class="about">
-                GitHub es una plataforma que aloja repositorios de código.
-                Usando Git, facilita el control de versiones y la colaboración
-                en proyectos de software. Es una red social para
-                desarrolladores.
-              </p>
-              <a
-                href="https://docs.github.com/es"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/habilidadesblandas.png" alt="Habilidades Blandas" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Habilidades Blandas</h4>
-              <h5 class="name2">Soft skills</h5>
-              <p class="about">
-                Las habilidades blandas son rasgos personales y sociales que
-                influyen en cómo interactúas con otros. Son cruciales para el
-                trabajo en equipo, la comunicación y el liderazgo.
-              </p>
-              <a
-                href="pdf/Habilidades Blandas.pdf"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/scrum.png" alt="Scrum" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Scrum</h4>
-              <h5 class="name2">Metodologías</h5>
-              <p class="about">
-                Scrum es un marco de trabajo, una metodología ágil que gestiona
-                proyectos de forma iterativa. Trabaja en ciclos cortos llamados
-                sprints para entregar valor constantemente y adaptarse a los
-                cambios.
-              </p>
-              <a
-                href="https://scrumguides.org/scrum-guide.html"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/testing.png" alt="Testing QA" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Testing QA</h4>
-              <h5 class="name2">Testing</h5>
-              <p class="about">
-                Es un proceso sistemático para prevenir y detectar errores en el
-                software. Su objetivo es garantizar que el producto cumpla con
-                los estándares de calidad.
-              </p>
-              <a
-                href="https://es.wikipedia.org/wiki/Pruebas_de_software"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/photo.png" alt="Photoshop" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Photoshop</h4>
-              <h5 class="name2">Herramienta de diseño</h5>
-              <p class="about">
-                Editor de gráficos ráster para manipulación de fotos, retoque,
-                composición digital y pintura. Esencial para fotógrafos y
-                artistas digitales.
-              </p>
-              <a
-                href="https://helpx.adobe.com/es/photoshop/get-started.html"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/illustrator.png" alt="Illustrator" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Illustrator</h4>
-              <h5 class="name2">Herramienta de diseño</h5>
-              <p class="about">
-                Editor de gráficos vectoriales para crear logotipos,
-                ilustraciones, tipografías y gráficos escalables. Herramienta
-                estándar de la industria.
-              </p>
-              <a
-                href="https://helpx.adobe.com/es/illustrator/get-started.html"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/figma2.png" alt="Figma" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Figma</h4>
-              <h5 class="name2">Herramienta de diseño</h5>
-              <p class="about">
-                Software de diseño de interfaz de usuario y prototipado
-                colaborativo basado en la nube. Ideal para equipos que trabajan
-                en aplicaciones y sitios web.
-              </p>
-              <a
-                href="https://help.figma.com/hc/en-us"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="squareBox"></div>
-            <div class="round_box"></div>
-            <div class="img_box">
-              <img src="img/canva.png" alt="Canva" />
-            </div>
-
-            <div class="user_content">
-              <h4 class="name">Canva</h4>
-              <h5 class="name2">Herramienta de diseño</h5>
-              <p class="about">
-                Herramienta de diseño gráfico en línea con plantillas fáciles de
-                usar. Perfecta para crear publicaciones en redes sociales,
-                presentaciones y otros materiales de marketing.
-              </p>
-              <a
-                href="https://www.canva.com/"
-                target="_blank"
-                class="doc-button"
-                >Ver Documentación</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <div class="botones-fin">
-      <!-- Pagina anterior-->
-
-      <a id="backButton" onClick="history.go(-1)"
-        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path
-            fill="#f73030"
-            d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z"
-          /></svg></a>
-
-      <!--Home -->
-
-      <div class="ultimo">
-        <a href="index.html"
-          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              fill="#f73030"
-              d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"
-            /></svg></a>
-      </div>
-
-      <!-- Inicio de Pagina -->
-
-      <a href="#"
-        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-          <path
-            fill="#f73030"
-            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm11.3-387.3c-6.2-6.2-16.4-6.2-22.6 0l-104 104c-4.6 4.6-5.9 11.5-3.5 17.4s8.3 9.9 14.8 9.9l72 0 0 104c0 13.3 10.7 24 24 24l16 0c13.3 0 24-10.7 24-24l0-104 72 0c6.5 0 12.3-3.9 14.8-9.9s1.1-12.9-3.5-17.4l-104-104z"
-          /></svg></a>
+<body>
+  <nav>
+    <div>
+      <a href="index.html"><img class="logo" src="img/logowhite.png" alt="icono" /></a>
+    </div>
+    <div class="nav-logo">DSL</div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="educacion.html">Educación</a>
+      <a href="contacto.html">Contacto</a>
     </div>
 
-    <div class="guarda"><img src="img/banner-guarda.png" alt="guarda" /></div>
-    <footer>
-      <div class="marquee">
-        <div>
-          <span
-            >Todos los derechos reservados - Jorge Daniel Cataldo - DSL -
-            Copyright &copy; -2025 - Argentina
-          </span>
+
+  </nav>
+
+
+
+  <main>
+    <section>
+      <h1>Habilidades</h1>
+      <p class="presentacion">
+        Mi caja de herramientas está lista para tus ideas. Aquí detallo las
+        habilidades técnicas y creativas que he cultivado para ofrecer
+        soluciones completas, desde el diseño visual hasta la funcionalidad
+        final. Echa un vistazo a lo que puedo hacer por ti.
+      </p>
+
+      <div class="card_container">
+        <!--<div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/astro.png" alt="Astro" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Astro</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              Astro es un framework web que crea sitios web ultra rápidos.
+              Utiliza una arquitectura de "islas de interactividad" para
+              enviar el mínimo JavaScript posible. Es ideal para blogs y
+              sitios de contenido estático.
+            </p>
+            <a href="https://astro.build/" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>-->
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/bootstrap.png" alt="Bootstrap" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Bootstrap</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              Bootstrap es un framework de código abierto para desarrollo web.
+              Con su sistema de cuadrícula y componentes listos para usar,
+              simplifica la creación de sitios web responsivos y modernos.
+            </p>
+            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"
+              class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/css.png" alt="Css" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Css</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              CSS, o Hojas de Estilo en Cascada, es un lenguaje de diseño
+              gráfico que se usa para dar estilo a los documentos web. Define
+              la tipografía, los colores, el espaciado y la apariencia de un
+              sitio.
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/html.png" alt="Html" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Html</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              HTML es el lenguaje de marcado para estructurar páginas web.
+              Define el contenido (párrafos, títulos, enlaces, imágenes)
+              usando etiquetas. Es el esqueleto básico de todo sitio web.
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/javascript.png" alt="JavaScript" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">JavaScript</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              JavaScript, o JS, es un lenguaje de programación que da vida a
+              las páginas web. Añade interactividad y dinamismo, permitiendo
+              animaciones, validación de formularios y mucho más.
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/mysql.png" alt="MySQL" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">MySQL</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              MySQL es un sistema de gestión de bases de datos relacionales de
+              código abierto. Almacena y organiza datos en tablas, utilizando
+              el lenguaje SQL para consultas y gestión.
+            </p>
+            <a href="https://dev.mysql.com/doc/refman/8.0/en/" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/nodejs.jpeg" alt="Node js" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Node js</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              Node.js es un entorno de ejecución que permite usar JavaScript
+              en el servidor. Es ideal para crear aplicaciones rápidas y
+              escalables, como APIs y servicios web.
+            </p>
+            <a href="https://nodejs.org/es/docs" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/php.jpeg" alt="PHP" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">PHP</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              PHP es un lenguaje de programación para el desarrollo web del
+              lado del servidor. Permite crear sitios web dinámicos, procesar
+              formularios y gestionar bases de datos.
+            </p>
+            <a href="https://www.php.net/docs.php" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/reactjs.jpeg" alt="React js" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">React js</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              React es una librería de JavaScript para crear interfaces de
+              usuario. Es declarativa y basada en componentes, lo que permite
+              construir UIs complejas y dinámicas de forma eficiente.
+            </p>
+            <a href="https://es.react.dev/learn" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <!--<div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/tailwindcss.jpeg" alt="Tailwindcss" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Tailwindcss</h4>
+            <h5 class="name2">Desarrollo</h5>
+            <p class="about">
+              Tailwind CSS es un framework de utilidad que te permite
+              construir interfaces de usuario rápidas y personalizadas. Provee
+              clases de bajo nivel para estilizar HTML directamente.
+            </p>
+            <a href="https://tailwindcss.com/docs/utility-first" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>-->
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/github.jpeg" alt="GitHub" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">GitHub</h4>
+            <h5 class="name2">Control de Versiones</h5>
+            <p class="about">
+              GitHub es una plataforma que aloja repositorios de código.
+              Usando Git, facilita el control de versiones y la colaboración
+              en proyectos de software. Es una red social para
+              desarrolladores.
+            </p>
+            <a href="https://docs.github.com/es" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/habilidadesblandas.png" alt="Habilidades Blandas" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Habilidades Blandas</h4>
+            <h5 class="name2">Soft skills</h5>
+            <p class="about">
+              Las habilidades blandas son rasgos personales y sociales que
+              influyen en cómo interactúas con otros. Son cruciales para el
+              trabajo en equipo, la comunicación y el liderazgo.
+            </p>
+            <a href="pdf/Habilidades Blandas.pdf" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/scrum.png" alt="Scrum" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Scrum</h4>
+            <h5 class="name2">Metodologías</h5>
+            <p class="about">
+              Scrum es un marco de trabajo, una metodología ágil que gestiona
+              proyectos de forma iterativa. Trabaja en ciclos cortos llamados
+              sprints para entregar valor constantemente y adaptarse a los
+              cambios.
+            </p>
+            <a href="https://scrumguides.org/scrum-guide.html" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/testing.png" alt="Testing QA" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Testing QA</h4>
+            <h5 class="name2">Testing</h5>
+            <p class="about">
+              Es un proceso sistemático para prevenir y detectar errores en el
+              software. Su objetivo es garantizar que el producto cumpla con
+              los estándares de calidad.
+            </p>
+            <a href="https://es.wikipedia.org/wiki/Pruebas_de_software" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>
+
+        <!--<div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/photo.png" alt="Photoshop" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Photoshop</h4>
+            <h5 class="name2">Herramienta de diseño</h5>
+            <p class="about">
+              Editor de gráficos ráster para manipulación de fotos, retoque,
+              composición digital y pintura. Esencial para fotógrafos y
+              artistas digitales.
+            </p>
+            <a href="https://helpx.adobe.com/es/photoshop/get-started.html" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/illustrator.png" alt="Illustrator" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Illustrator</h4>
+            <h5 class="name2">Herramienta de diseño</h5>
+            <p class="about">
+              Editor de gráficos vectoriales para crear logotipos,
+              ilustraciones, tipografías y gráficos escalables. Herramienta
+              estándar de la industria.
+            </p>
+            <a href="https://helpx.adobe.com/es/illustrator/get-started.html" target="_blank" class="doc-button">Ver
+              Documentación</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/figma2.png" alt="Figma" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Figma</h4>
+            <h5 class="name2">Herramienta de diseño</h5>
+            <p class="about">
+              Software de diseño de interfaz de usuario y prototipado
+              colaborativo basado en la nube. Ideal para equipos que trabajan
+              en aplicaciones y sitios web.
+            </p>
+            <a href="https://help.figma.com/hc/en-us" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
+        </div>-->
+
+        <div class="card">
+          <div class="squareBox"></div>
+          <div class="round_box"></div>
+          <div class="img_box">
+            <img src="img/canva.png" alt="Canva" />
+          </div>
+
+          <div class="user_content">
+            <h4 class="name">Canva</h4>
+            <h5 class="name2">Herramienta de diseño</h5>
+            <p class="about">
+              Herramienta de diseño gráfico en línea con plantillas fáciles de
+              usar. Perfecta para crear publicaciones en redes sociales,
+              presentaciones y otros materiales de marketing.
+            </p>
+            <a href="https://www.canva.com/" target="_blank" class="doc-button">Ver Documentación</a>
+          </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="qr">
-        <img src="img/cvjdcQR.png" alt="" />
-        <a href="pdf/CVITATS.pdf" download="CVITATS.pdf" target="_blank">
-          <button class="btn-1">Descargar CV</button>
+  <div class="botones-fin">
+    <!-- Pagina anterior-->
+
+    <a id="backButton" onClick="history.go(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="#f73030"
+          d="M48 256a208 208 0 1 1 416 0A208 208 0 1 1 48 256zm464 0A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9c4.2 4.5 10.1 7.1 16.3 7.1c12.3 0 22.3-10 22.3-22.3V304h96c17.7 0 32-14.3 32-32V240c0-17.7-14.3-32-32-32H256V150.3c0-12.3-10-22.3-22.3-22.3c-6.2 0-12.1 2.6-16.3 7.1L117.5 242.2c-3.5 3.8-5.5 8.7-5.5 13.8s2 10.1 5.5 13.8l99.9 107.1z" />
+      </svg></a>
+
+    <!--Home -->
+
+    <div class="ultimo">
+      <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path fill="#f73030"
+            d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z" />
+        </svg></a>
+    </div>
+
+    <!-- Inicio de Pagina -->
+
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path fill="#f73030"
+          d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm11.3-387.3c-6.2-6.2-16.4-6.2-22.6 0l-104 104c-4.6 4.6-5.9 11.5-3.5 17.4s8.3 9.9 14.8 9.9l72 0 0 104c0 13.3 10.7 24 24 24l16 0c13.3 0 24-10.7 24-24l0-104 72 0c6.5 0 12.3-3.9 14.8-9.9s1.1-12.9-3.5-17.4l-104-104z" />
+      </svg></a>
+  </div>
+
+  <div class="guarda"><img src="img/banner-guarda.png" alt="guarda" /></div>
+  <footer>
+    <div class="marquee">
+      <div>
+        <span>Todos los derechos reservados - Jorge Daniel Cataldo - DSL -
+          Copyright &copy; -2025 - Argentina
+        </span>
+      </div>
+    </div>
+
+    <div class="qr">
+      <img src="img/cvjdcQR.png" alt="" />
+      <a href="pdf/CVITATS.pdf" download="CVITATS.pdf" target="_blank">
+        <button class="btn-1">Descargar CV</button>
+      </a>
+    </div>
+
+    <h3>Escanea el QR o haz click en el botón y descarga mi CV</h3>
+    <div class="social-icons-footer">
+      <a href="mailto:danielcataldo673@gmail.com?subject=Consulta%20desde%20Portafolio%20(Netlify)" target="_blank">
+        <i class="fas fa-at"></i></a>
+      <a href="https://wa.me/5491125954784" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/jorgedanielcataldo" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/jorge-daniel-cataldo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/DanielCataldo673/DanielCataldo673" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="container-card-footer">
+      <div class="card-footer">
+        <a href="proyectos.html">
+          <div class="face front">
+            <img class="card-footer-img" src="img/proyectos.jpeg" alt="imagen1" />
+            <h3>Proyectos</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-footer">
+        <a href="portfolio.html">
+          <div class="face front">
+            <img src="img/porfolio.jpeg" alt="imagen5" />
+            <h3>Portfolio</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-footer">
+        <a href="habilidades.html">
+          <div class="face front">
+            <img src="img/habilidades.jpeg" alt="imagen2" />
+            <h3>Habilidades</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card-footer">
+        <a href="educacion.html">
+          <div class="face front">
+            <img src="img/educacion.jpeg" alt="imagen1" />
+            <h3>Educación</h3>
+          </div>
         </a>
       </div>
 
-      <h3>Escanea el QR o haz click en el botón y descarga mi CV</h3>
-      <div class="social-icons-footer">
-        <a href="mailto:danielcataldo673@gmail.com" target="_blank"
-          ><i class="fas fa-at"></i
-        ></a>
-        <a href="https://wa.me/5491125954784" target="_blank"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-        <a href="https://www.instagram.com/jorgedanielcataldo" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/jorge-daniel-cataldo/"
-          target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a
-          href="https://github.com/DanielCataldo673/DanielCataldo673"
-          target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
+      <div class="card-footer">
+        <a href="contacto.html">
+          <div class="face front">
+            <img src="img/contacto.jpeg" alt="imagen1" />
+            <h3>Contacto</h3>
+          </div>
+        </a>
       </div>
+    </div>
+  </footer>
+</body>
 
-      <div class="container-card-footer">
-        <div class="card-footer">
-          <a href="proyectos.html">
-            <div class="face front">
-              <img
-                class="card-footer-img"
-                src="img/proyectos.jpeg"
-                alt="imagen1"
-              />
-              <h3>Proyectos</h3>
-            </div>
-          </a>
-        </div>
-        <div class="card-footer">
-          <a href="portfolio.html">
-            <div class="face front">
-              <img src="img/porfolio.jpeg" alt="imagen5" />
-              <h3>Portfolio</h3>
-            </div>
-          </a>
-        </div>
-        <div class="card-footer">
-          <a href="habilidades.html">
-            <div class="face front">
-              <img src="img/habilidades.jpeg" alt="imagen2" />
-              <h3>Habilidades</h3>
-            </div>
-          </a>
-        </div>
-        <div class="card-footer">
-          <a href="educacion.html">
-            <div class="face front">
-              <img src="img/educacion.jpeg" alt="imagen1" />
-              <h3>Educación</h3>
-            </div>
-          </a>
-        </div>
-
-        <div class="card-footer">
-          <a href="contacto.html">
-            <div class="face front">
-              <img src="img/contacto.jpeg" alt="imagen1" />
-              <h3>Contacto</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
