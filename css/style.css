@@ -159,9 +159,6 @@ h3{
 }
 
 
-
-
-
 .social-icons {
   display: flex;
   gap: 1.5rem;
@@ -502,15 +499,138 @@ h3{
 
 /* MEDIA QUERIES */
 
-@media (max-width: 992px) {
- 
+/* ---------------------------------------------- */
+/* BREAKPOINT: sm (min-width: 576px) */
+/* Rango: 576px a < 992px  */
+/* ---------------------------------------------- */
+@media (min-width: 576px) {
+    
+    
+    /* Mejorar la legibilidad de la marquesina en móviles grandes */
+    .marquee span {
+        font-size: 1.7rem; 
+    }
 }
 
-@media (max-width: 768px) {
-  
+
+/* ---------------------------------------------- */
+/* BREAKPOINT: md (Tablet Key Point) */
+/* Rango: 768px a < 992px  */
+/* ---------------------------------------------- */
+@media (min-width: 768px) {
+    /* 1. LAYOUT PRINCIPAL: Mostrar .content y .bg-main-container en paralelo */
+    .container {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 8rem 4rem 2rem;
+    }
+
+    /* Redefinimos la proporción para que ambos ocupen espacio visible */
+    .content,
+    .bg-main-container {
+        flex: 1 1 45%; 
+    }
+
+    /* 2. IMAGEN: Aumentar el tamaño de la imagen principal */
+    .bg-main-container img{
+        width: 400px; 
+        height: 400px;
+    }
+
+    
+
+    /* 4. FOOTER: Reducir el tamaño de las tarjetas */
+    .card-footer {
+        width: 80px;
+        height: 120px;
+    }
+    .card-footer .front h3 {
+        font-size: .7rem; 
+    }
 }
 
-@media (max-width: 480px) {
- 
+
+/* ---------------------------------------------- */
+/* BREAKPOINT: lg (Laptops pequeñas) */
+/* Rango: 992px en adelante */
+/* ---------------------------------------------- */
+@media (min-width: 992px) {
+    
+    
+    /* 2. TIPOGRAFÍA: Aumentar la tipografía para mejor legibilidad en desktop */
+    .content h1 {
+        font-size: 3.5rem;
+    }
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    /* 3. IMAGEN: Aumentar la imagen al tamaño original deseado */
+    .bg-main-container img{
+        width: 450px; 
+        height: 450px;
+        margin-left: -20%;
+    }
+
+    /* 4. BOTONES DE CONTROL: Usar 'vw' que es más seguro en desktop */
+    .botones-fin svg {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    /* 5. MARQUEE: Usar 'vw' */
+    .marquee span {
+        font-size: 1.5vw;
+    }
+
+    /* 6. CARD FOOTER: Usar 'vw' */
+    .card-footer .front h3 {
+        font-size: .7vw;
+    }
+}
+
+
+/* ---------------------------------------------- */
+/* BREAKPOINT: xl (Monitores Estándar) */
+/* ---------------------------------------------- */
+@media (min-width: 1200px) {
+    /* 1. CONTENEDOR PRINCIPAL: Establecer un ancho máximo para centrar el contenido */
+    nav,
+    .container,
+    .marquee,
+    .guarda,
+    .social-icons-footer,
+    .container-card-footer,
+    .botones-fin {
+        max-width: 1140px; /* Ancho máximo común */
+    }
+
+    /* 2. TIPOGRAFÍA: Ajuste fino para la vista grande */
+    .content p {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* ---------------------------------------------- */
+/* BREAKPOINT: xxl (Monitores Grandes) */
+/* ---------------------------------------------- */
+@media (min-width: 1400px) {
+    /* 1. CONTENEDOR PRINCIPAL: Permitir un ancho un poco mayor, pero aún limitado */
+    nav,
+    .container,
+    .marquee,
+    .guarda,
+    .social-icons-footer,
+    .container-card-footer,
+    .botones-fin {
+        max-width: 1650px; 
+    }
+
+    /* 2. IMAGEN: Si deseas un tamaño absoluto grande */
+    .bg-main-container img{
+        width: 500px;
+        height: 500px;
+    }
 }
 
