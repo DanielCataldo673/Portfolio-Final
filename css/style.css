@@ -157,7 +157,6 @@ nav {
   text-shadow: none;
 }
 
-/* ... (El resto de los estilos base sin cambios hasta las media queries) ... */
 
 
 .content h2 {
@@ -610,13 +609,21 @@ h3 {
   /* 2. TIPOGRAFÍA: Aumentar la tipografía para mejor legibilidad en desktop */
   .content h1 {
     font-size: 2rem;
+    text-align: start;
   }
   .content h2 {
     font-size: 1rem;
+    text-align: start;
   }
   .content p {
     font-size: .9rem;
+    text-align: start;
   }
+
+  .social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
 
   /* 7. FOOTER: Reducir el tamaño de las tarjetas */
   .card-footer {
