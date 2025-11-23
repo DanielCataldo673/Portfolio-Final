@@ -76,7 +76,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 58%;
   height: 100vh; /* CLAVE MODIFICADA: Usamos 100vh para asegurar que cubre toda la ventana */
   background-color: var(--fondo-negro);
   z-index: 1000; /* CLAVE MODIFICADA: Asegura que esté por encima del contenido principal */
@@ -90,7 +90,7 @@ nav {
 }
 .nav-links.menu-activo a {
   font-size: 1rem;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 
@@ -151,12 +151,12 @@ nav {
 
 .content {
   flex: 1 1 100%; /* Ocupa todo el ancho en móvil */
-  max-width: 600px;
+  max-width: 280px;
   z-index: 1;
 }
 
 .content h1 {
-  font-size: 2.5rem; /* Reducir tamaño de fuente para móvil */
+  font-size: 2.2rem; /* Reducir tamaño de fuente para móvil */
   margin-bottom: 1.5rem;
   line-height: 1.2;
   color: var(--texto-rojo);
@@ -175,20 +175,22 @@ nav {
 
 h3 {
   color: var(--texto-rojo);
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .content p {
   font-family: var(--fuente-secundaria);
-  font-size: 1.1rem; /* Reducir tamaño de fuente para móvil */
+  font-size: 1rem; /* Reducir tamaño de fuente para móvil */
   color: var(--texto-blanco);
   margin-bottom: 2.5rem;
-  line-height: 1.6;
+  line-height: 1.9;
+  letter-spacing: 1px;
 }
 
 .bg-main-container {
@@ -200,8 +202,8 @@ h3 {
 }
 
 .bg-main-container img {
-  width: 300px; /* Reducir tamaño de imagen para móvil */
-  height: 300px;
+  width: 250px; /* Reducir tamaño de imagen para móvil */
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +229,7 @@ h3 {
   animation: marquee 25s linear infinite;
   font-weight: 500;
   color: var(--texto-rojo);
-  font-size: 1.3rem; /* Ajuste para la base */
+  font-size: 1.2rem; /* Ajuste para la base */
 }
 
 @keyframes marquee {
@@ -256,7 +258,7 @@ h3 {
   color: var(--texto-blanco);
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
-  font-size: 0.8rem; /* Ajuste inicial de vw */
+  font-size: 0.7rem; /* Ajuste inicial de vw */
 }
 
 .botones-fin svg {
@@ -274,13 +276,13 @@ h3 {
 }
 
 .qr img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .social-icons {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.1rem;
 }
 
 .social-icons a {
@@ -351,7 +353,7 @@ h3 {
 
 .social-icons-footer {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.1rem;
   justify-content: center;
   margin-top: 5%;
   margin-bottom: 3%;
@@ -428,13 +430,16 @@ h3 {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+  gap: 30px;
 }
 
 .card-footer {
   position: relative;
   width: 80px;
-  height: 120px;
+  height: 110px;
 }
 
 .card-footer:hover {
@@ -471,7 +476,7 @@ h3 {
   background-color: rgba(247, 48, 48, 0.1);
   border: 1px solid var(--texto-rojo);
   padding: 10px;
-  font-size: 1rem;
+  font-size: .8rem;
   color: var(--texto-rojo);
   border-radius: 50px;
   cursor: pointer;
@@ -503,6 +508,11 @@ h3 {
 /* Rango: 576px a < 768px -> MÓVIL GRANDE / TABLET PEQUEÑA */
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
+
+  /* Ajuste del logo para pantallas más grandes */
+  .nav-logo {
+    margin-left: -40%;
+  }
 
 /* --- MAIN CONTENT (Optimizado para apilamiento en móvil) --- */
   .content {
@@ -721,7 +731,7 @@ h3 {
   .social-icons-footer,
   .container-card-footer,
   .botones-fin {
-    max-width: 1140px;
+    max-width: 1400px;
   }
 
   .nav-logo {
@@ -758,6 +768,16 @@ h3 {
     font-size: 1.25rem;
   }
 
+  /* 3. CARD FOOTER: Usar 'vw' */
+  .card-footer .front h3 {
+    font-size: .9vw;
+  }
+
+   /* 4. BOTONES DE CONTROL: Usar 'vw' que es más escalable */
+  .botones-fin svg {
+    width: 2.9vw;
+    height: 2.9vw;
+  }
   
 }
 
@@ -805,6 +825,10 @@ h3 {
     box-shadow: 0 0 20px var(--texto-rojo);
   }
 
+   /* 3. CARD FOOTER: Usar 'vw' */
+  .card-footer .front h3 {
+    font-size: .7vw;
+  }
   
  
 }
