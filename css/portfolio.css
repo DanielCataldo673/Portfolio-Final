@@ -553,37 +553,52 @@ section .arriba a {
 }
 
 /* MEDIA QUERIES */
+/* ================================================= */
+/* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
+/* ================================================= */
+
+
+
+
+
+
+/* ================================================= */
+/* 2. MEDIA QUERIES (ADAPTACIONES) */
+/* ================================================= */
 
 /* ---------------------------------------------- */
-/* BREAKPOINT: sm */
+/* BREAKPOINT: sm (min-width: 576px) */
+/* Rango: 576px a < 768px -> MÓVIL GRANDE / TABLET PEQUEÑA */
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
     
 }
 
 /* ---------------------------------------------- */
-/* BREAKPOINT: md */
+/* BREAKPOINT: md (min-width: 768px) - Tablet a Desktop */
+/* Rango: 768px en adelante -> NAVEGACIÓN DE ESCRITORIO ACTIVO */
+/* Este es el punto clave para cambiar de hamburguesa a menú de escritorio */
 /* ---------------------------------------------- */
 @media (min-width: 768px) {
     
 }
 
 /* ---------------------------------------------- */
-/* BREAKPOINT: lg */
+/* BREAKPOINT: lg (min-width: 992px) - Desktop */
 /* ---------------------------------------------- */
 @media (min-width: 992px) {
     
 }
 
 /* ---------------------------------------------- */
-/* BREAKPOINT: xl */
+/* BREAKPOINT: xl (min-width: 1200px) - Monitores Estándar */
 /* ---------------------------------------------- */
 @media (min-width: 1200px) {
     
 }
 
 /* ---------------------------------------------- */
-/* BREAKPOINT: xxl */
+/* BREAKPOINT: xxl (min-width: 1400px) - Monitores Grandes */
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
     
