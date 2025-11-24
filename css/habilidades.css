@@ -24,6 +24,13 @@ body {
 }
 
 
+
+
+/* MEDIA QUERIES */
+/* ================================================= */
+/* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
+/* ================================================= */
+
 /* MODIFICACIÓN: Ajuste del h1 y la sección */
 /* ¡AQUÍ ES DONDE AJUSTAS EL ESPACIO SUPERIOR! */
 section {
@@ -162,12 +169,6 @@ h1 {
     color: var(--texto-blanco);
     box-shadow: -5px 0 30px rgba(247, 48, 48, 0.3);
 }
-
-/* MEDIA QUERIES */
-/* ================================================= */
-/* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
-/* ================================================= */
-
 
 
 

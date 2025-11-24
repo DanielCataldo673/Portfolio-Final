@@ -23,6 +23,13 @@ body {
   color: var(--texto-negro);
 }
 
+
+/* MEDIA QUERIES */
+/* ================================================= */
+/* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
+/* ================================================= */
+
+
 section {
   padding-top: 120px; /* Puedes aumentar o disminuir este valor según necesites */
 }
@@ -357,13 +364,6 @@ color: var(--texto-blanco);
   bottom: -35px;
   opacity: 1;
 }
-
-
-/* MEDIA QUERIES */
-/* ================================================= */
-/* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
-/* ================================================= */
-
 
 
 
