@@ -128,7 +128,7 @@ h1 {
 .container .products-container .product button {
   background-color: var(--texto-rojo);
   border: 1px solid var(--texto-blanco);
-  border-radius: 50%;
+  border-radius: 3%;
   color: var(--texto-blanco);
   padding: 3px;
   font-size: 0.7rem;
