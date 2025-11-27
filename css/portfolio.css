@@ -32,7 +32,6 @@ body {
   color: var(--texto-negro);
 }
 
-
 /* MEDIA QUERIES */
 /* ================================================= */
 /* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
@@ -41,9 +40,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
   font-family: var(--fuente-principal);
-  margin-top: 10%; /* Se ha cambiado a 0 para eliminar el margen que creaba el espacio rojo */
+  margin-top: 38%;
   line-height: 1.2;
   color: var(--texto-rojo);
   text-shadow: none;
@@ -51,18 +51,18 @@ h1 {
 
 /* Párrafo de presentación mejorado */
 .presentacion {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: var(--fuente-secundaria);
   color: var(--texto-blanco);
   text-align: center; /* Centrar el texto para mejor visualización */
   line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
+  max-width: 600px; /* Usar un ancho máximo para pantallas grandes */
   margin: 20px auto 0px auto; /* Centrar y añadir espacio */
 }
 
 .container {
   /* 1. ANCHO MÁXIMO DEL CONTENEDOR */
-  max-width: 1300px;
+  max-width: 600px;
   /* Centrar el contenedor en la página */
   margin-left: auto;
   margin-right: auto;
@@ -75,17 +75,17 @@ h1 {
   flex-wrap: wrap;
   gap: 30px;
   width: 100%;
-  margin-top: 0%;
+  margin-top: -15%;
   margin-bottom: 3%;
 }
 
-.container .title {
+/*.container .title {
   font-size: 3.5rem;
   color: #444;
   margin-bottom: 3rem;
   text-transform: uppercase;
   text-align: center;
-}
+}*/
 
 .container .products-container {
   /* CONFIGURACIÓN DEL GRID: Permite que las cards de 300px se ajusten */
@@ -99,7 +99,7 @@ h1 {
 
 .container .products-container .product {
   /* TAMAÑO DE LA CARD */
-  width: 100%;
+  width: 63%;
   text-align: center;
   padding: 2rem 2rem;
   background: var(--fondo-rojo);
@@ -120,7 +120,7 @@ h1 {
 
 .container .products-container .product h3 {
   padding: 0.5rem 0;
-  font-size: 1.2vw;
+  font-size: 0.8rem;
   font-family: var(--fuente-principal);
   color: var(--texto-rojo);
 }
@@ -176,6 +176,7 @@ h1 {
 
 .products-preview .preview h1 {
   margin-top: 4%;
+  font-size: 1.2rem;
 }
 
 .products-preview .preview ::-webkit-scrollbar {
@@ -209,7 +210,7 @@ h1 {
   right: 1.5rem;
   cursor: pointer;
   color: var(--texto-rojo);
-  font-size: 2.5vw;
+  font-size: 1rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -219,7 +220,8 @@ h1 {
 }
 
 .products-preview .preview h3 {
-  font-size: 2.5vw;
+  font-size: 0.8rem;
+  line-height: 20px;
   font-family: var(--fuente-principal);
   color: var(--texto-rojo);
   padding: 0.5rem 0;
@@ -239,14 +241,15 @@ h1 {
 }
 
 .products-preview .preview h2 {
-  font-size: 2.8vw;
+  font-size: 1rem;
   text-align: center;
   color: var(--texto-rojo);
   font-family: var(--fuente-principal);
 }
 
 .products-preview .preview h4 {
-  font-size: 1.7vw;
+  font-size: 0.8rem;
+  line-height: 20px;
   text-align: center;
   color: var(--texto-rojo);
   font-family: var(--fuente-principal);
@@ -280,10 +283,10 @@ h1 {
 
 .products-preview .preview li,
 .products-preview .preview p {
-  line-height: 3vw;
+  line-height: 1.5rem;
   letter-spacing: 0.2vw;
   padding: 1rem 0;
-  font-size: 1.5vw;
+  font-size: 0.8rem;
   color: var(--texto-blanco);
   font-family: var(--fuente-secundaria);
 }
@@ -342,7 +345,7 @@ h1 {
 }
 
 .slider .list .item h4 {
-  font-size: 0.6vw;
+  font-size: 0.5rem;
   font-weight: bold;
   letter-spacing: 1px;
   color: var(--texto-negro);
@@ -401,7 +404,7 @@ h1 {
 
 .container-invitaciones {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 3%;
@@ -415,8 +418,8 @@ h1 {
 }
 
 .container-invitaciones .list-invitaciones img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: solid 1px var(--texto-blanco);
 }
 
@@ -425,6 +428,9 @@ h1 {
 .products-preview .preview section .galery {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 10px;
   margin-top: 3%;
 }
@@ -456,8 +462,8 @@ h1 {
 }
 
 section h2 {
-  margin-top: 3%;
-  margin-bottom: 2%;
+  margin-top: 13%;
+  margin-bottom: 12%;
   font-size: 2vw;
   color: var(--texto-rojo);
   font-family: var(--fuente-principal);
@@ -470,8 +476,8 @@ section #pizzas .card-tres3,
 section #pollo .card-tres3,
 section #rapida .card-tres3,
 section #tragos .card-tres3 {
-  width: 450px;
-  height: 400px;
+  width: 170px;
+  height: 150px;
   border-radius: 0.25em;
   float: center;
   margin-top: 3%;
@@ -486,8 +492,8 @@ section #mascotas .card-tres2,
 section #mascotas2 .card-tres2,
 section #boda .card-tres2,
 section #boda2 .card-tres2 {
-  width: 450px;
-  height: 400px;
+  width: 170px;
+  height: 150px;
   border-radius: 0.25em;
   float: center;
   margin-top: 3%;
@@ -500,8 +506,8 @@ section #vivero .card-tres,
 section #food .card-tres,
 section #pan .card-tres,
 section #barberia .card-tres {
-  width: 500px;
-  height: 300px;
+  width: 170px;
+  height: 150px;
   border-radius: 0.25em;
   float: center;
   margin-top: 3%;
@@ -519,7 +525,7 @@ section #barberia .card-tres {
 section .arriba a {
   text-decoration: none;
   font-family: var(--fuente-secundaria);
-  font-size: 1.8vw;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--texto-rojo);
 }
@@ -539,28 +545,23 @@ section .arriba a {
 }
 
 .products-preview .preview section .galery .card-dos {
-  width: 500px;
-  height: 300px;
+  width: 170px;
+  height: 150px;
   border-radius: 0.25em;
   float: left;
 }
 
 /* Selecciona todos los elementos de video de la página */
 .video-invitacion {
-  margin-left: 17%;
-  width: 800px; /* Ya lo tenías */
-  height: 600px; /* <--- DEFINE UNA ALTURA FIJA AQUÍ (ajusta este valor) */
+  margin: auto;
+  width: 170px;
+  height: 150px;
 }
 .video-invitacion video {
   width: 100%;
   height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
   object-fit: cover; /* Ajusta el video para cubrir el contenedor sin distorsión */
 }
-
-
-
-
-
 
 /* ================================================= */
 /* 2. MEDIA QUERIES (ADAPTACIONES) */
@@ -571,7 +572,538 @@ section .arriba a {
 /* Rango: 576px a < 768px -> MÓVIL GRANDE / TABLET PEQUEÑA */
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
-    
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: var(--fuente-principal);
+    margin-top: 25%;
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.3rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 600px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
+
+  .container {
+    /* 1. ANCHO MÁXIMO DEL CONTENEDOR */
+    max-width: 600px;
+    /* Centrar el contenedor en la página */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 2. TÍTULO ARRIBA: Asegura apilamiento vertical */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-top: -15%;
+    margin-bottom: 3%;
+  }
+
+  /*.container .title {
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}*/
+
+  .container .products-container {
+    /* CONFIGURACIÓN DEL GRID: Permite que las cards de 300px se ajusten */
+    display: grid;
+    /* 'auto-fit' + 'minmax(300px, 1fr)' asegura que cada card sea de 300px ocupe 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .container .products-container .product {
+    /* TAMAÑO DE LA CARD */
+    width: 63%;
+    text-align: center;
+    padding: 2rem 2rem;
+    background: var(--fondo-rojo);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    outline: 0.1rem solid var(--texto-rojo);
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    border: 5px double var(--texto-rojo);
+    box-shadow: 0 5px 15px var(--texto-rojo);
+  }
+
+  .container .products-container .product img {
+    /* MODIFICACIÓN CLAVE: Asegura que la imagen no exceda el ancho de su contenedor */
+    width: 100%;
+    height: 350px;
+    border-radius: 3%;
+  }
+
+  .container .products-container .product h3 {
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    font-family: var(--fuente-principal);
+    color: var(--texto-rojo);
+  }
+
+  .container .products-container .product button {
+    background-color: var(--texto-rojo);
+    border: 1px solid var(--texto-blanco);
+    border-radius: 3%;
+    color: var(--texto-blanco);
+    padding: 3px;
+    font-size: 0.7rem;
+    font-family: var(--fuente-principal);
+    width: 80px;
+    height: 40px;
+    transition: 0.1s ease-in-out 0.1s;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .container .products-container .product button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--texto-rojo);
+    border: 1px solid var(--texto-negro);
+    color: var(--texto-negro);
+  }
+
+  .products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: url("/img/tec.png");
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+  }
+
+  .products-preview .preview {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: url("/img/stars.gif");
+    border: 1px solid var(--texto-rojo);
+    box-shadow: 0 5px 15px var(--texto-rojo);
+    position: relative;
+    margin: 2rem;
+    width: 80rem;
+    height: 600px;
+    overflow-y: scroll;
+  }
+
+  .products-preview .preview h1 {
+    margin-top: 4%;
+    font-size: 1.5rem;
+  }
+
+  .products-preview .preview ::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra completa */
+  }
+
+  .products-preview .preview ext::-webkit-scrollbar-track {
+    background: var(--texto-rojo); /* Color del fondo de la barra */
+  }
+
+  .products-preview .preview ::-webkit-scrollbar-thumb {
+    padding: 10px;
+    margin-left: 2%;
+    background-color: var(--fondo-rojo); /* Color de la parte arrastrable */
+    border-radius: 20px; /* Redondea las esquinas del "thumb" */
+    border: 3px double var(--texto-blanco); /* Borde para el efecto de separación */
+  }
+
+  .products-preview .preview.active {
+    display: inline-block;
+  }
+
+  .products-preview .preview img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .products-preview .preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: var(--texto-rojo);
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .products-preview .preview .fa-times:hover {
+    transform: rotate(90deg);
+    color: var(--texto-blanco);
+  }
+
+  .products-preview .preview h3 {
+    font-size: 1.1rem;
+    line-height: 30px;
+    font-family: var(--fuente-principal);
+    color: var(--texto-rojo);
+    padding: 0.5rem 0;
+  }
+
+  .products-preview .preview .stars {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+  }
+
+  .products-preview .preview .stars i {
+    color: #27ae60;
+  }
+
+  .products-preview .preview .stars span {
+    color: #999;
+  }
+
+  .products-preview .preview h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
+  .products-preview .preview h4 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+    margin-top: 1%;
+    margin-bottom: 3%;
+  }
+
+  .products-preview .preview section {
+    margin-top: 7%;
+    border-bottom: var(--texto-rojo) solid 1px;
+  }
+
+  .products-preview .preview section strong {
+    color: var(--texto-rojo);
+    margin-top: 3%;
+  }
+
+  .card-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .card-list strong {
+    color: var(--strong);
+    display: block;
+    margin-top: 10px;
+  }
+
+  .products-preview .preview section em {
+    background-color: var(--fondo-rojo2);
+    margin-top: 3%;
+  }
+
+  .products-preview .preview li,
+  .products-preview .preview p {
+    line-height: 30px;
+    letter-spacing: 0.4vw;
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: var(--texto-blanco);
+    font-family: var(--fuente-secundaria);
+  }
+
+  .products-preview .preview .price {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #27ae60;
+  }
+
+  .products-preview .preview .buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+
+  .products-preview .preview .buttons a {
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: 0.1rem solid #444;
+  }
+
+  .products-preview .preview .buttons a.cart {
+    background: #444;
+    color: #fff;
+  }
+
+  .products-preview .preview .buttons a.cart:hover {
+    background: #111;
+  }
+
+  .products-preview .preview .buttons a.buy:hover {
+    background: #444;
+    color: #fff;
+  }
+
+  /* Slider Modal */
+
+  .slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    /* Máscara para un efecto de desvanecimiento en los bordes */
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 10% 90%,
+      transparent
+    );
+  }
+  .slider .list {
+    display: flex;
+    width: 100%;
+    /* El ancho mínimo ahora depende de la variable --quantity */
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+    margin-top: 2%;
+  }
+
+  .slider .list .item h4 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--texto-negro);
+    background-color: rgba(252, 250, 251, 0.5);
+    font-family: var(--fuente-principal);
+    position: absolute;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+  .slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+
+    /* CÁLCULO ARREGLADO: El retardo de la animación usa la variable --quantity */
+    animation-delay: calc(
+      (10s / var(--quantity)) * (var(--position) - 1) - 10s
+    ) !important;
+  }
+  .slider .list .item img {
+    width: 100%;
+    border: 2px solid var(--texto-rojo);
+  }
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(var(--width) * -1);
+    }
+  }
+  .slider:hover .item {
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+    cursor: pointer;
+  }
+  .slider .item:hover {
+    filter: grayscale(0);
+  }
+  .slider[reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+  }
+  @keyframes reversePlay {
+    from {
+      left: calc(var(--width) * -1);
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  .container-invitaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    gap: 100px;
+  }
+
+  .list-invitaciones {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .container-invitaciones .list-invitaciones img {
+    width: 310px;
+    height: 310px;
+    border: solid 1px var(--texto-blanco);
+  }
+
+  /*SECTION*/
+
+  .products-preview .preview section .galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 3%;
+  }
+
+  .products-preview .preview section .galery img {
+    width: 100px;
+    height: 100px;
+    margin: 0.25em 1em 1em 0;
+    border-radius: 0.25em;
+    float: left;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .products-preview .preview section .galery .foto-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.25em;
+    float: left;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .galery .foto-1:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #4c4c4c;
+    -webkit-box-shadow: 0px 0px 15px 15px #4c4c4c;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+
+  section h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 2vw;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
+  section #cafe .card-tres3,
+  section #helados .card-tres3,
+  section #jardin .card-tres3,
+  section #pizzas .card-tres3,
+  section #pollo .card-tres3,
+  section #rapida .card-tres3,
+  section #tragos .card-tres3 {
+    width: 170px;
+    height: 150px;
+    border-radius: 0.25em;
+    float: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  section #mayores .card-tres2,
+  section #anios .card-tres2,
+  section #infantil .card-tres2,
+  section #infantil2 .card-tres2,
+  section #mascotas .card-tres2,
+  section #mascotas2 .card-tres2,
+  section #boda .card-tres2,
+  section #boda2 .card-tres2 {
+    width: 310px;
+    height: 290px;
+    border-radius: 0.25em;
+    float: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  section #mecanica .card-tres,
+  section #abogado .card-tres,
+  section #vivero .card-tres,
+  section #food .card-tres,
+  section #pan .card-tres,
+  section #barberia .card-tres {
+    width: 170px;
+    height: 150px;
+    border-radius: 0.25em;
+    float: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .arriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  section .arriba a {
+    text-decoration: none;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--texto-rojo);
+  }
+
+  .custom-red {
+    color: var(--texto-rojo);
+  }
+
+  .fa-inverse {
+    color: white !important;
+  }
+
+  .fa-stack {
+    font-size: 1vw;
+    /* Esto es opcional, solo para centrar o alinear el ícono si es necesario */
+    vertical-align: middle;
+  }
+
+  .products-preview .preview section .galery .card-dos {
+    width: 170px;
+    height: 150px;
+    border-radius: 0.25em;
+    float: left;
+  }
+
+  /* Selecciona todos los elementos de video de la página */
+  .video-invitacion {
+    margin: auto;
+    width: 310px;
+    height: 290px;
+  }
+  .video-invitacion video {
+    width: 100%;
+    height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+    object-fit: cover; /* Ajusta el video para cubrir el contenedor sin distorsión */
+  }
 }
 
 /* ---------------------------------------------- */
@@ -580,26 +1112,554 @@ section .arriba a {
 /* Este es el punto clave para cambiar de hamburguesa a menú de escritorio */
 /* ---------------------------------------------- */
 @media (min-width: 768px) {
-    
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--fuente-principal);
+    margin-top: 15%;
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.2rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 600px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
+
+  .container {
+    /* 1. ANCHO MÁXIMO DEL CONTENEDOR */
+    max-width: 600px;
+    /* Centrar el contenedor en la página */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 2. TÍTULO ARRIBA: Asegura apilamiento vertical */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-top: -15%;
+    margin-bottom: 3%;
+  }
+
+  /*.container .title {
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}*/
+
+  .container .products-container {
+    /* CONFIGURACIÓN DEL GRID: Permite que las cards de 300px se ajusten */
+    display: grid;
+    /* 'auto-fit' + 'minmax(300px, 1fr)' asegura que cada card sea de 300px ocupe 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .container .products-container .product {
+    /* TAMAÑO DE LA CARD */
+    width: 70%;
+    text-align: center;
+    padding: 2rem 2rem;
+    background: var(--fondo-rojo);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    outline: 0.1rem solid var(--texto-rojo);
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    border: 5px double var(--texto-rojo);
+    box-shadow: 0 5px 15px var(--texto-rojo);
+  }
+
+  .container .products-container .product img {
+    /* MODIFICACIÓN CLAVE: Asegura que la imagen no exceda el ancho de su contenedor */
+    width: 100%;
+    height: 350px;
+    border-radius: 3%;
+  }
+
+  .container .products-container .product h3 {
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    font-family: var(--fuente-principal);
+    color: var(--texto-rojo);
+  }
+
+  .container .products-container .product button {
+    background-color: var(--texto-rojo);
+    border: 1px solid var(--texto-blanco);
+    border-radius: 3%;
+    color: var(--texto-blanco);
+    padding: 3px;
+    font-size: 0.7rem;
+    font-family: var(--fuente-principal);
+    width: 80px;
+    height: 40px;
+    transition: 0.1s ease-in-out 0.1s;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .container .products-container .product button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--texto-rojo);
+    border: 1px solid var(--texto-negro);
+    color: var(--texto-negro);
+  }
+
+  .products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: url("/img/tec.png");
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+  }
+
+  .products-preview .preview {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: url("/img/stars.gif");
+    border: 1px solid var(--texto-rojo);
+    box-shadow: 0 5px 15px var(--texto-rojo);
+    position: relative;
+    margin: 2rem;
+    width: 80rem;
+    height: 600px;
+    overflow-y: scroll;
+  }
+
+  .products-preview .preview h1 {
+    margin-top: 4%;
+    font-size: 1.2rem;
+  }
+
+  .products-preview .preview ::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra completa */
+  }
+
+  .products-preview .preview ext::-webkit-scrollbar-track {
+    background: var(--texto-rojo); /* Color del fondo de la barra */
+  }
+
+  .products-preview .preview ::-webkit-scrollbar-thumb {
+    padding: 10px;
+    margin-left: 2%;
+    background-color: var(--fondo-rojo); /* Color de la parte arrastrable */
+    border-radius: 20px; /* Redondea las esquinas del "thumb" */
+    border: 3px double var(--texto-blanco); /* Borde para el efecto de separación */
+  }
+
+  .products-preview .preview.active {
+    display: inline-block;
+  }
+
+  .products-preview .preview img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .products-preview .preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: var(--texto-rojo);
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .products-preview .preview .fa-times:hover {
+    transform: rotate(90deg);
+    color: var(--texto-blanco);
+  }
+
+  .products-preview .preview h3 {
+    font-size: 1rem;
+    line-height: 20px;
+    font-family: var(--fuente-principal);
+    color: var(--texto-rojo);
+    padding: 0.5rem 0;
+  }
+
+  .products-preview .preview .stars {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+  }
+
+  .products-preview .preview .stars i {
+    color: #27ae60;
+  }
+
+  .products-preview .preview .stars span {
+    color: #999;
+  }
+
+  .products-preview .preview h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
+  .products-preview .preview h4 {
+    font-size: 1.1rem;
+    line-height: 20px;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+    margin-top: 1%;
+  }
+
+  .products-preview .preview section {
+    margin-top: 7%;
+    border-bottom: var(--texto-rojo) solid 1px;
+  }
+
+  .products-preview .preview section strong {
+    color: var(--texto-rojo);
+    margin-top: 3%;
+  }
+
+  .card-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .card-list strong {
+    color: var(--strong);
+    display: block;
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+
+  .products-preview .preview section em {
+    background-color: var(--fondo-rojo2);
+    margin-top: 3%;
+  }
+
+  .products-preview .preview li,
+  .products-preview .preview p {
+    line-height: 2rem;
+    letter-spacing: 0.2vw;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: var(--texto-blanco);
+    font-family: var(--fuente-secundaria);
+  }
+
+  .products-preview .preview .price {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #27ae60;
+  }
+
+  .products-preview .preview .buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+
+  .products-preview .preview .buttons a {
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: 0.1rem solid #444;
+  }
+
+  .products-preview .preview .buttons a.cart {
+    background: #444;
+    color: #fff;
+  }
+
+  .products-preview .preview .buttons a.cart:hover {
+    background: #111;
+  }
+
+  .products-preview .preview .buttons a.buy:hover {
+    background: #444;
+    color: #fff;
+  }
+
+  /* Slider Modal */
+
+  .slider {
+    width: 100%;
+    height: var(--height);
+    overflow: hidden;
+    /* Máscara para un efecto de desvanecimiento en los bordes */
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 10% 90%,
+      transparent
+    );
+  }
+  .slider .list {
+    display: flex;
+    width: 100%;
+    /* El ancho mínimo ahora depende de la variable --quantity */
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+    margin-top: 2%;
+  }
+
+  .slider .list .item h4 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--texto-negro);
+    background-color: rgba(252, 250, 251, 0.5);
+    font-family: var(--fuente-principal);
+    position: absolute;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+  }
+  .slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s linear infinite;
+    transition: filter 0.5s;
+
+    /* El retardo de la animación usa la variable --quantity */
+    animation-delay: calc(
+      (10s / var(--quantity)) * (var(--position) - 1) - 10s
+    ) !important;
+  }
+  .slider .list .item img {
+    width: 100%;
+    border: 2px solid var(--texto-rojo);
+  }
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(var(--width) * -1);
+    }
+  }
+  .slider:hover .item {
+    animation-play-state: paused !important;
+    filter: grayscale(1);
+    cursor: pointer;
+  }
+  .slider .item:hover {
+    filter: grayscale(0);
+  }
+  .slider[reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+  }
+  @keyframes reversePlay {
+    from {
+      left: calc(var(--width) * -1);
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  .container-invitaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    gap: 100px;
+  }
+
+  .list-invitaciones {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .container-invitaciones .list-invitaciones img {
+    width: 200px;
+    height: 200px;
+    border: solid 1px var(--texto-blanco);
+  }
+
+  /*SECTION*/
+
+  .products-preview .preview section .galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 3%;
+  }
+
+  .products-preview .preview section .galery img {
+    width: 100px;
+    height: 100px;
+    margin: 0.25em 1em 1em 0;
+    border-radius: 0.25em;
+    float: left;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .products-preview .preview section .galery .foto-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.25em;
+    float: left;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .galery .foto-1:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #4c4c4c;
+    -webkit-box-shadow: 0px 0px 15px 15px #4c4c4c;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+
+  section h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 2vw;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
+  section #cafe .card-tres3,
+  section #helados .card-tres3,
+  section #jardin .card-tres3,
+  section #pizzas .card-tres3,
+  section #pollo .card-tres3,
+  section #rapida .card-tres3,
+  section #tragos .card-tres3 {
+    width: 170px;
+    height: 150px;
+    border-radius: 0.25em;
+    float: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  section #mayores .card-tres2,
+  section #anios .card-tres2,
+  section #infantil .card-tres2,
+  section #infantil2 .card-tres2,
+  section #mascotas .card-tres2,
+  section #mascotas2 .card-tres2,
+  section #boda .card-tres2,
+  section #boda2 .card-tres2 {
+    width: 170px;
+    height: 150px;
+    border-radius: 0.25em;
+    float: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  section #mecanica .card-tres,
+  section #abogado .card-tres,
+  section #vivero .card-tres,
+  section #food .card-tres,
+  section #pan .card-tres,
+  section #barberia .card-tres {
+    width: 170px;
+    height: 150px;
+    border-radius: 0.25em;
+    float: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .arriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+
+  section .arriba a {
+    text-decoration: none;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--texto-rojo);
+  }
+
+  .custom-red {
+    color: var(--texto-rojo);
+  }
+
+  .fa-inverse {
+    color: white !important;
+  }
+
+  .fa-stack {
+    font-size: 1vw;
+    /* Esto es opcional, solo para centrar o alinear el ícono si es necesario */
+    vertical-align: middle;
+  }
+
+  .products-preview .preview section .galery .card-dos {
+    width: 300px;
+    height: 250px;
+    border-radius: 0.25em;
+    float: left;
+  }
+
+  /* Selecciona todos los elementos de video de la página */
+  .video-invitacion {
+    margin: auto;
+    width: 170px;
+    height: 150px;
+  }
+  .video-invitacion video {
+    width: 100%;
+    height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+    object-fit: cover; /* Ajusta el video para cubrir el contenedor sin distorsión */
+  }
 }
 
 /* ---------------------------------------------- */
 /* BREAKPOINT: lg (min-width: 992px) - Desktop */
 /* ---------------------------------------------- */
 @media (min-width: 992px) {
-    
 }
 
 /* ---------------------------------------------- */
 /* BREAKPOINT: xl (min-width: 1200px) - Monitores Estándar */
 /* ---------------------------------------------- */
 @media (min-width: 1200px) {
-    
 }
 
 /* ---------------------------------------------- */
 /* BREAKPOINT: xxl (min-width: 1400px) - Monitores Grandes */
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
-    
 }
