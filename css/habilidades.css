@@ -724,6 +724,7 @@ h1 {
 /* BREAKPOINT: xxl (min-width: 1400px) - Monitores Grandes */
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
+  
 
     h1 {
     display: flex;

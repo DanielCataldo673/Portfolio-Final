@@ -28,6 +28,10 @@ body {
 /* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
 /* ================================================= */
 
+section {
+    padding-top: 120px;
+  }
+
  h1 {
   display: flex;
   justify-content: center;
@@ -35,7 +39,6 @@ body {
   text-align: center;
   font-size: 1.8rem;
   font-family: var(--fuente-principal);
-  margin-top: 37%;
   line-height: 1.2;
   color: var(--texto-rojo);
   text-shadow: none;
@@ -362,6 +365,10 @@ body {
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
 
+  section {
+    padding-top: 120px;
+  }
+
   h1 {
     display: flex;
     justify-content: center;
@@ -369,7 +376,6 @@ body {
     text-align: center;
     font-size: 2rem;
     font-family: var(--fuente-principal);
-    margin-top: 22%;
     line-height: 1.2;
     color: var(--texto-rojo);
     text-shadow: none;
@@ -694,6 +700,10 @@ body {
 /* ---------------------------------------------- */
 @media (min-width: 768px) {
 
+  section {
+    padding-top: 120px;
+  }
+
   h1 {
     display: flex;
     justify-content: center;
@@ -701,7 +711,6 @@ body {
     text-align: center;
     font-size: 2.1rem;
     font-family: var(--fuente-principal);
-    margin-top: 19%;
     line-height: 1.2;
     color: var(--texto-rojo);
     text-shadow: none;
@@ -1024,6 +1033,10 @@ body {
 /* ---------------------------------------------- */
 @media (min-width: 992px) {
 
+  section {
+    padding-top: 120px;
+  }
+
   h1 {
     display: flex;
     justify-content: center;
@@ -1031,7 +1044,6 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-family: var(--fuente-principal);
-    margin-top: 15%;
     line-height: 1.2;
     color: var(--texto-rojo);
     text-shadow: none;
@@ -1354,6 +1366,10 @@ body {
 /* ---------------------------------------------- */
 @media (min-width: 1200px) {
 
+  section {
+    padding-top: 120px;
+  }
+
    h1 {
     display: flex;
     justify-content: center;
@@ -1361,7 +1377,6 @@ body {
     text-align: center;
     font-size: 2.7rem;
     font-family: var(--fuente-principal);
-    margin-top: 13%;
     line-height: 1.2;
     color: var(--texto-rojo);
     text-shadow: none;
@@ -1683,6 +1698,10 @@ body {
 /* BREAKPOINT: xxl (min-width: 1400px) - Monitores Grandes */
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
+
+  section {
+    padding-top: 120px;
+  }
   
   h1 {
     display: flex;
@@ -1691,7 +1710,6 @@ body {
     text-align: center;
     font-size: 2.7rem;
     font-family: var(--fuente-principal);
-    margin-top: 10%;
     line-height: 1.2;
     color: var(--texto-rojo);
     text-shadow: none;
