@@ -54,6 +54,33 @@ p {
 /* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
 /* ================================================= */
 
+section {
+  padding-top: 120px;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.2;
+  color: var(--texto-rojo);
+  text-shadow: none;
+}
+
+/* Párrafo de presentación mejorado */
+.presentacion {
+  font-size: 1rem;
+  font-family: var(--fuente-secundaria);
+  color: var(--texto-blanco);
+  text-align: center; /* Centrar el texto para mejor visualización */
+  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+  max-width: 300px; /* Usar un ancho máximo para pantallas grandes */
+  margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+}
+
 .wrap {
   display: flex;
   flex-wrap: nowrap;
@@ -454,28 +481,6 @@ strong {
   margin-bottom: 10%;
 }
 
-.h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  font-family: var(--fuente-principal);
-  margin-top: 38%;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
-
-/* Párrafo de presentación mejorado */
-.presentacion {
-  font-size: 1rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--texto-blanco);
-  text-align: center; /* Centrar el texto para mejor visualización */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
-}
 
 .card-list {
   list-style-type: none;
@@ -532,6 +537,33 @@ strong {
 /* Rango: 576px a < 768px -> MÓVIL GRANDE / TABLET PEQUEÑA */
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
+
+  section {
+    padding-top: 120px;
+  }
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.2rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 550px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
 
   .wrap {
   display: flex;
@@ -935,28 +967,7 @@ strong {
   margin-bottom: 10%;
 }
 
-.h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  font-family: var(--fuente-principal);
-  margin-top: 25%;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
 
-/* Párrafo de presentación mejorado */
-.presentacion {
-  font-size: 1.2rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--texto-blanco);
-  text-align: center; /* Centrar el texto para mejor visualización */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
-}
 
 .card-list {
   list-style-type: none;
@@ -1011,6 +1022,32 @@ strong {
 /* ---------------------------------------------- */
 @media (min-width: 768px) {
     
+  section {
+    padding-top: 120px;
+  }
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.3rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 745px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
 
   .wrap {
   display: flex;
@@ -1414,28 +1451,7 @@ strong {
   margin-bottom: 10%;
 }
 
-.h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  font-family: var(--fuente-principal);
-  margin-top: 20%;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
 
-/* Párrafo de presentación mejorado */
-.presentacion {
-  font-size: 1.3rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--texto-blanco);
-  text-align: center; /* Centrar el texto para mejor visualización */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
-}
 
 .card-list {
   list-style-type: none;
@@ -1486,6 +1502,32 @@ strong {
 /* ---------------------------------------------- */
 @media (min-width: 992px) {
     
+  section {
+    padding-top: 120px;
+  }
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.4rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 955px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
 
   .wrap {
   display: flex;
@@ -1889,28 +1931,7 @@ strong {
   margin-bottom: 10%;
 }
 
-.h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-family: var(--fuente-principal);
-  margin-top: 15%;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
 
-/* Párrafo de presentación mejorado */
-.presentacion {
-  font-size: 1.5rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--texto-blanco);
-  text-align: center; /* Centrar el texto para mejor visualización */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
-}
 
 .card-list {
   list-style-type: none;
@@ -1961,6 +1982,32 @@ strong {
 /* ---------------------------------------------- */
 @media (min-width: 1200px) {
     
+  section {
+    padding-top: 120px;
+  }
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.5rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 1150px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
 
    .wrap {
   display: flex;
@@ -2364,28 +2411,7 @@ strong {
   margin-bottom: 10%;
 }
 
-.h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.2rem;
-  font-family: var(--fuente-principal);
-  margin-top: 13%;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
 
-/* Párrafo de presentación mejorado */
-.presentacion {
-  font-size: 1.7rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--texto-blanco);
-  text-align: center; /* Centrar el texto para mejor visualización */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
-}
 
 .card-list {
   list-style-type: none;
@@ -2436,6 +2462,32 @@ strong {
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
      
+section {
+    padding-top: 120px;
+  }
+
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
+
+  /* Párrafo de presentación mejorado */
+  .presentacion {
+    font-size: 1.5rem;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-blanco);
+    text-align: center; /* Centrar el texto para mejor visualización */
+    line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
+    max-width: 1350px; /* Usar un ancho máximo para pantallas grandes */
+    margin: 20px auto 0px auto; /* Centrar y añadir espacio */
+  }
 
    .wrap {
   display: flex;
@@ -2839,28 +2891,7 @@ strong {
   margin-bottom: 10%;
 }
 
-.h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.2rem;
-  font-family: var(--fuente-principal);
-  margin-top: 10%;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
 
-/* Párrafo de presentación mejorado */
-.presentacion {
-  font-size: 1.7rem;
-  font-family: var(--fuente-secundaria);
-  color: var(--texto-blanco);
-  text-align: center; /* Centrar el texto para mejor visualización */
-  line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 800px; /* Usar un ancho máximo para pantallas grandes */
-  margin: 20px auto 50px auto; /* Centrar y añadir espacio */
-}
 
 .card-list {
   list-style-type: none;

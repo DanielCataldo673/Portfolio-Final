@@ -51,7 +51,7 @@ section {
   color: var(--texto-blanco);
   text-align: center; /* Centrar el texto para mejor visualización */
   line-height: 1.6; /* Aumentar el interlineado para mejor legibilidad */
-  max-width: 400px; /* Usar un ancho máximo para pantallas grandes */
+  max-width: 300px; /* Usar un ancho máximo para pantallas grandes */
   margin: 20px auto 0px auto; /* Centrar y añadir espacio */
 }
 
