@@ -186,7 +186,7 @@ strong {
   height: auto;
   margin-left: -25%;
 }
-/*fit-content*/
+
 .wrap:hover .overlay .overlay-content h1,
 .wrap:hover .overlay .overlay-content p {
   background-color: var(--fondo-rojo-dos);

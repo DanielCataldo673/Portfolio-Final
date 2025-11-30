@@ -37,8 +37,8 @@ body {
 /* 1. ESTILOS BASE (0px a < 576px) - ¡MOBILE-FIRST! */
 /* ================================================= */
 section {
-    padding-top: 120px;
-  }
+  padding-top: 120px;
+}
 
 h1 {
   display: flex;
@@ -235,13 +235,6 @@ h1 {
   color: #999;
 }
 
-.products-preview .preview h2 {
-  font-size: 1rem;
-  text-align: center;
-  color: var(--texto-rojo);
-  font-family: var(--fuente-principal);
-}
-
 .products-preview .preview h4 {
   font-size: 0.8rem;
   line-height: 20px;
@@ -254,6 +247,7 @@ h1 {
 .products-preview .preview section {
   margin-top: 7%;
   border-bottom: var(--texto-rojo) solid 1px;
+  padding-top: 30px;
 }
 
 .products-preview .preview section strong {
@@ -456,10 +450,10 @@ h1 {
   -webkit-transform: rotate(360deg);
 }
 
-section h2 {
-  margin-top: 13%;
-  margin-bottom: 12%;
-  font-size: 2vw;
+.products-preview .preview section h2 {
+  font-size: 1rem;
+  margin-top: -5%;
+  text-align: center;
   color: var(--texto-rojo);
   font-family: var(--fuente-principal);
 }
@@ -567,7 +561,7 @@ section .arriba a {
 /* Rango: 576px a < 768px -> MÓVIL GRANDE / TABLET PEQUEÑA */
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
-section {
+  section {
     padding-top: 120px;
   }
 
@@ -766,13 +760,6 @@ section {
     color: #999;
   }
 
-  .products-preview .preview h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
-
   .products-preview .preview h4 {
     font-size: 1.3rem;
     line-height: 30px;
@@ -783,9 +770,17 @@ section {
     margin-bottom: 3%;
   }
 
+  .products-preview .preview section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
   .products-preview .preview section {
     margin-top: 7%;
     border-bottom: var(--texto-rojo) solid 1px;
+    padding-top: 30px;
   }
 
   .products-preview .preview section strong {
@@ -993,13 +988,6 @@ section {
     -webkit-transform: rotate(360deg);
   }
 
-  section h2 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-size: 2vw;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
 
   section #cafe .card-tres3,
   section #helados .card-tres3,
@@ -1102,7 +1090,6 @@ section {
 /* Este es el punto clave para cambiar de hamburguesa a menú de escritorio */
 /* ---------------------------------------------- */
 @media (min-width: 768px) {
-
   section {
     padding-top: 150px;
   }
@@ -1302,12 +1289,6 @@ section {
     color: #999;
   }
 
-  .products-preview .preview h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
 
   .products-preview .preview h4 {
     font-size: 1.1rem;
@@ -1318,9 +1299,17 @@ section {
     margin-top: 1%;
   }
 
+  .products-preview .preview section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
   .products-preview .preview section {
     margin-top: 7%;
     border-bottom: var(--texto-rojo) solid 1px;
+    padding-top: 30px;
   }
 
   .products-preview .preview section strong {
@@ -1530,13 +1519,6 @@ section {
     -webkit-transform: rotate(360deg);
   }
 
-  section h2 {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-size: 2vw;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
 
   section #cafe .card-tres3,
   section #helados .card-tres3,
@@ -1637,7 +1619,6 @@ section {
 /* BREAKPOINT: lg (min-width: 992px) - Desktop */
 /* ---------------------------------------------- */
 @media (min-width: 992px) {
-
   section {
     padding-top: 150px;
   }
@@ -1837,12 +1818,7 @@ section {
     color: #999;
   }
 
-  .products-preview .preview h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
+  
 
   .products-preview .preview h4 {
     font-size: 1.1rem;
@@ -1853,9 +1829,17 @@ section {
     margin-top: 1%;
   }
 
+  .products-preview .preview section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
   .products-preview .preview section {
     margin-top: 7%;
     border-bottom: var(--texto-rojo) solid 1px;
+    padding-top: 30px;
   }
 
   .products-preview .preview section strong {
@@ -2065,14 +2049,6 @@ section {
     -webkit-transform: rotate(360deg);
   }
 
-  section h2 {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-size: 2vw;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
-
   section #cafe .card-tres3,
   section #helados .card-tres3,
   section #jardin .card-tres3,
@@ -2172,7 +2148,6 @@ section {
 /* BREAKPOINT: xl (min-width: 1200px) - Monitores Estándar */
 /* ---------------------------------------------- */
 @media (min-width: 1200px) {
-
   section {
     padding-top: 150px;
   }
@@ -2372,12 +2347,7 @@ section {
     color: #999;
   }
 
-  .products-preview .preview h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
+  
 
   .products-preview .preview h4 {
     font-size: 1.1rem;
@@ -2388,9 +2358,17 @@ section {
     margin-top: 1%;
   }
 
+  .products-preview .preview section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
   .products-preview .preview section {
     margin-top: 7%;
     border-bottom: var(--texto-rojo) solid 1px;
+    padding-top: 30px;
   }
 
   .products-preview .preview section strong {
@@ -2604,14 +2582,6 @@ section {
     -webkit-transform: rotate(360deg);
   }
 
-  section h2 {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-size: 2vw;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
-
   section #cafe .card-tres3,
   section #helados .card-tres3,
   section #jardin .card-tres3,
@@ -2711,7 +2681,6 @@ section {
 /* BREAKPOINT: xxl (min-width: 1400px) - Monitores Grandes */
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
-
   section {
     padding-top: 150px;
   }
@@ -2911,13 +2880,6 @@ section {
     color: #999;
   }
 
-  .products-preview .preview h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
-  }
-
   .products-preview .preview h4 {
     font-size: 1.1rem;
     line-height: 20px;
@@ -2927,9 +2889,17 @@ section {
     margin-top: 1%;
   }
 
+  .products-preview .preview section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--texto-rojo);
+    font-family: var(--fuente-principal);
+  }
+
   .products-preview .preview section {
     margin-top: 7%;
     border-bottom: var(--texto-rojo) solid 1px;
+    padding-top: 30px;
   }
 
   .products-preview .preview section strong {
@@ -3141,14 +3111,6 @@ section {
     -webkit-box-shadow: 0px 0px 15px 15px #4c4c4c;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-  }
-
-  section h2 {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-size: 2vw;
-    color: var(--texto-rojo);
-    font-family: var(--fuente-principal);
   }
 
   section #cafe .card-tres3,
