@@ -245,7 +245,7 @@ button[type="submit"]:hover {
   width: 90px;
   height: 90px;
   margin-bottom: 10px;
-  border-radius: 50%; /* Si quieres que el logo sea circular */
+  border-radius: 50%;
 }
 
 .container-icons2 {
@@ -596,7 +596,7 @@ button[type="submit"]:hover {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
-    border-radius: 50%; /* Si quieres que el logo sea circular */
+    border-radius: 50%;
   }
 
   .container-icons2 {
@@ -945,7 +945,7 @@ button[type="submit"]:hover {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
-    border-radius: 50%; /* Si quieres que el logo sea circular */
+    border-radius: 50%;
   }
 
   .container-icons2 {
@@ -1292,7 +1292,7 @@ button[type="submit"]:hover {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
-    border-radius: 50%; /* Si quieres que el logo sea circular */
+    border-radius: 50%;
   }
 
   .container-icons2 {
@@ -1639,7 +1639,7 @@ button[type="submit"]:hover {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
-    border-radius: 50%; /* Si quieres que el logo sea circular */
+    border-radius: 50%;
   }
 
   .container-icons2 {
@@ -1769,7 +1769,6 @@ button[type="submit"]:hover {
 /* BREAKPOINT: xxl (min-width: 1400px) - Monitores Grandes */
 /* ---------------------------------------------- */
 @media (min-width: 1400px) {
-
   section {
     padding-top: 120px;
   }

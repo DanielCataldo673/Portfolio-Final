@@ -988,7 +988,6 @@ section .arriba a {
     -webkit-transform: rotate(360deg);
   }
 
-
   section #cafe .card-tres3,
   section #helados .card-tres3,
   section #jardin .card-tres3,
@@ -1289,7 +1288,6 @@ section .arriba a {
     color: #999;
   }
 
-
   .products-preview .preview h4 {
     font-size: 1.1rem;
     line-height: 20px;
@@ -1518,7 +1516,6 @@ section .arriba a {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
   }
-
 
   section #cafe .card-tres3,
   section #helados .card-tres3,
@@ -1817,8 +1814,6 @@ section .arriba a {
   .products-preview .preview .stars span {
     color: #999;
   }
-
-  
 
   .products-preview .preview h4 {
     font-size: 1.1rem;
@@ -2346,8 +2341,6 @@ section .arriba a {
   .products-preview .preview .stars span {
     color: #999;
   }
-
-  
 
   .products-preview .preview h4 {
     font-size: 1.1rem;

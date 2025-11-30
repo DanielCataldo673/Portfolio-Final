@@ -77,7 +77,6 @@ h1 {
   color: var(--texto-rojo);
   position: relative;
   padding-top: 80px;
-  /* Aumenta el padding para dar espacio al nuevo botón */
 }
 
 .user_content .name {
@@ -144,7 +143,6 @@ h1 {
   padding: 10px;
 }
 
-/* Nuevos estilos para el botón de documentación */
 .doc-button {
   display: inline-block;
   margin-top: 20px;
@@ -222,7 +220,6 @@ h1 {
     color: var(--texto-rojo);
     position: relative;
     padding-top: 80px;
-    /* Aumenta el padding para dar espacio al nuevo botón */
   }
 
   .user_content .name {
@@ -289,7 +286,6 @@ h1 {
     padding: 10px;
   }
 
-  /* Nuevos estilos para el botón de documentación */
   .doc-button {
     display: inline-block;
     margin-top: 20px;
@@ -365,7 +361,6 @@ h1 {
     color: var(--texto-rojo);
     position: relative;
     padding-top: 80px;
-    /* Aumenta el padding para dar espacio al nuevo botón */
   }
 
   .user_content .name {
@@ -432,7 +427,6 @@ h1 {
     padding: 10px;
   }
 
-  /* Nuevos estilos para el botón de documentación */
   .doc-button {
     display: inline-block;
     margin-top: 20px;
@@ -506,7 +500,6 @@ h1 {
     color: var(--texto-rojo);
     position: relative;
     padding-top: 80px;
-    /* Aumenta el padding para dar espacio al nuevo botón */
   }
 
   .user_content .name {
@@ -573,7 +566,6 @@ h1 {
     padding: 10px;
   }
 
-  /* Nuevos estilos para el botón de documentación */
   .doc-button {
     display: inline-block;
     margin-top: 20px;
@@ -647,7 +639,6 @@ h1 {
     color: var(--texto-rojo);
     position: relative;
     padding-top: 80px;
-    /* Aumenta el padding para dar espacio al nuevo botón */
   }
 
   .user_content .name {
@@ -714,7 +705,6 @@ h1 {
     padding: 10px;
   }
 
-  /* Nuevos estilos para el botón de documentación */
   .doc-button {
     display: inline-block;
     margin-top: 20px;

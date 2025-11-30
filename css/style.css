@@ -85,15 +85,13 @@ nav {
   align-items: center;
   gap: 3rem;
   /* Añadimos scroll y padding para evitar que los enlaces se peguen al icono de cierre */
-  overflow-y: auto; 
-  padding-top: 5rem; 
+  overflow-y: auto;
+  padding-top: 5rem;
 }
 .nav-links.menu-activo a {
   font-size: 1rem;
   margin-top: 5%;
 }
-
-
 
 .nav-links a {
   text-decoration: none;
@@ -163,8 +161,6 @@ nav {
   text-shadow: none;
 }
 
-
-
 .content h2 {
   font-size: 1.3rem; /* Reducir tamaño de fuente para móvil */
   margin-bottom: 1.5rem;
@@ -208,7 +204,6 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-left: 0;
-  
 }
 
 /* --- MARQUEE, FOOTER Y BOTONES (Ajuste de VW a REM/PX en móvil) --- */
@@ -474,7 +469,7 @@ h3 {
   background-color: rgba(247, 48, 48, 0.1);
   border: 1px solid var(--texto-rojo);
   padding: 10px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--texto-rojo);
   border-radius: 50px;
   cursor: pointer;
@@ -506,51 +501,50 @@ h3 {
 /* Rango: 576px a < 768px -> MÓVIL GRANDE / TABLET PEQUEÑA */
 /* ---------------------------------------------- */
 @media (min-width: 576px) {
-
   /* Ajuste del logo para pantallas más grandes */
   .nav-logo {
     margin-left: -40%;
   }
 
-/* --- MAIN CONTENT (Optimizado para apilamiento en móvil) --- */
+  /* --- MAIN CONTENT (Optimizado para apilamiento en móvil) --- */
   .content {
-  flex: 1 1 100%; /* Ocupa todo el ancho en móvil */
-  max-width: 576px;
-  z-index: 1;
-}
+    flex: 1 1 100%; /* Ocupa todo el ancho en móvil */
+    max-width: 576px;
+    z-index: 1;
+  }
 
-.content h1 {
-  text-align: center;
-  font-size: 2.5rem; /* Reducir tamaño de fuente para móvil */
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  color: var(--texto-rojo);
-  text-shadow: none;
-}
+  .content h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Reducir tamaño de fuente para móvil */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--texto-rojo);
+    text-shadow: none;
+  }
 
-.content h2 {
-  font-size: 1.3rem; /* Reducir tamaño de fuente para móvil */
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  color: var(--texto-blanco);
-  text-shadow: none;
-  text-align: center;
-}
+  .content h2 {
+    font-size: 1.3rem; /* Reducir tamaño de fuente para móvil */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--texto-blanco);
+    text-shadow: none;
+    text-align: center;
+  }
 
-.content p {
-  text-align: center;
-  font-family: var(--fuente-secundaria);
-  font-size: 1.1rem; /* Reducir tamaño de fuente para móvil */
-  color: var(--texto-blanco);
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
-}
+  .content p {
+    text-align: center;
+    font-family: var(--fuente-secundaria);
+    font-size: 1.1rem; /* Reducir tamaño de fuente para móvil */
+    color: var(--texto-blanco);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
   /* Mejorar la legibilidad de la marquesina */
   .marquee span {
     font-size: 1.7rem;
@@ -574,8 +568,8 @@ h3 {
     display: flex !important; /* Asegurar que se muestre en escritorio */
   }
 
-  .nav-links a{
-    font-size: .7rem; /* Ajuste fino para escritorio */
+  .nav-links a {
+    font-size: 0.7rem; /* Ajuste fino para escritorio */
   }
   /* 2. OCULTAR el icono de hamburguesa */
   .hamburger-icon {
@@ -594,12 +588,12 @@ h3 {
   }
 
   /* Redefinimos la proporción para que ambos ocupen espacio visible */
-  .content{
+  .content {
     flex: 1 1 45%;
     margin-top: -5%;
   }
 
- /* 1. IMAGEN: Aumentar la imagen al tamaño original deseado */
+  /* 1. IMAGEN: Aumentar la imagen al tamaño original deseado */
   .bg-main-container {
     flex: 1 1 45%;
     display: flex;
@@ -627,14 +621,14 @@ h3 {
     text-align: start;
   }
   .content p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-align: start;
   }
 
   .social-icons {
-  display: flex;
-  gap: 1.5rem;
-}
+    display: flex;
+    gap: 1.5rem;
+  }
 
   /* 7. FOOTER: Reducir el tamaño de las tarjetas */
   .card-footer {
@@ -706,7 +700,7 @@ h3 {
   }
 
   /* 6. Navegación */
-  .nav-links a{
+  .nav-links a {
     font-size: 1rem; /* Ajuste fino para escritorio */
   }
 }
@@ -730,10 +724,9 @@ h3 {
     margin-left: -20%;
   }
 
-  .nav-links a{
+  .nav-links a {
     font-size: 1.1rem; /* Ajuste fino para escritorio */
   }
-
 
   .bg-main-container {
     flex: 1 1 45%;
@@ -759,15 +752,14 @@ h3 {
 
   /* 3. CARD FOOTER: Usar 'vw' */
   .card-footer .front h3 {
-    font-size: .9vw;
+    font-size: 0.9vw;
   }
 
-   /* 4. BOTONES DE CONTROL: Usar 'vw' que es más escalable */
+  /* 4. BOTONES DE CONTROL: Usar 'vw' que es más escalable */
   .botones-fin svg {
     width: 2.9vw;
     height: 2.9vw;
   }
-  
 }
 
 /* ---------------------------------------------- */
@@ -789,11 +781,11 @@ h3 {
     margin-left: -30%;
   }
 
-  .nav-links a{
+  .nav-links a {
     font-size: 1.2rem; /* Ajuste fino para escritorio */
   }
 
-/* 2. IMAGEN: Si deseas un tamaño absoluto grande */
+  /* 2. IMAGEN: Si deseas un tamaño absoluto grande */
   .bg-main-container {
     flex: 1 1 45%;
     display: flex;
@@ -811,10 +803,8 @@ h3 {
     margin-left: -20%;
   }
 
-   /* 3. CARD FOOTER: Usar 'vw' */
+  /* 3. CARD FOOTER: Usar 'vw' */
   .card-footer .front h3 {
-    font-size: .7vw;
+    font-size: 0.7vw;
   }
-  
- 
 }
